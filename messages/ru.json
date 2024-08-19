@@ -12,6 +12,11 @@
       "ukrainian": "Украинский",
       "russian": "Русский",
       "changeLanguage": "Сменить язык"
+    },
+    "Nav": {
+      "home": "Главная",
+      "about": "О нас",
+      "contacts": "Контакты"
     }
   }
 }
