@@ -1,0 +1,18 @@
+{
+     "Header": {
+       "ModeToggle": {
+         "lightLabel": "Jasny",
+         "darkLabel": "Ciemny",
+         "systemLabel": "System",
+         "toggleTheme": "Zmień motyw"
+       },
+       "LanguageToggle": {
+         "english": "Angielski",
+         "polski": "Polski",
+         "ukrainian": "Ukraiński",
+         "russian": "Rosyjski",
+         "changeLanguage": "Zmień język"
+       }
+     }
+   }
+   
