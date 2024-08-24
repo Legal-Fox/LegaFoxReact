@@ -1,22 +1,97 @@
 {
-  "Header" : {
-       "ModeToggle":{
-          "lightLabel": "Light",
-          "darkLabel": "Dark",
-          "systemLabel": "System",
-          "toggleTheme": "Toggle theme"
-       },
-       "LanguageToggle":{
-         "changeLanguage": "Change language",
-          "english": "English",
-          "polski": "Polski",
-          "ukrainian": "Ukrainian",
-          "russian": "Russian"
+  "Header": {
+    "ModeToggle": {
+      "lightLabel": "Light",
+      "darkLabel": "Dark",
+      "systemLabel": "System",
+      "toggleTheme": "Toggle theme"
+    },
+    "LanguageToggle": {
+      "changeLanguage": "Change language",
+      "english": "English",
+      "polski": "Polski",
+      "ukrainian": "Ukrainian",
+      "russian": "Russian"
+    },
+    "Nav": {
+      "home": "Home",
+      "about": "About",
+      "contacts": "Contacts"
+    }
+  },
+  "HomePage": {
+    "HeroSection": {
+      "title": "Legalization Services in Poland",
+      "subTitle": "Welcome to KaMa Documents, your reliable partner in the legalization process in Poland. Our team simplifies the complex immigration process for foreigners, stays in touch at all stages, and handles all bureaucratic procedures.",
+      "heroButton": "Submit a request"
+    },
+    "ServicesSection": {
+      "title": "Our Services",
+      "subTitle": "We help clients obtain all types of residence permits, permanent residency, and citizenship, and also provide individual consultations.",
+      "cards": [
+        {
+          "heading": "Temporary Residence Permit",
+          "subHeading": "Pobyt Czasowy",
+          "content": "Residence card valid for up to 3 years. This type of permit can be obtained on various grounds, such as work, study, business, family reunification, cohabitation, marriage with a Polish citizen, etc."
         },
-        "Nav": {
-          "home": "Home",
-          "about": "About",
-          "contacts": "Contacts"
+        {
+          "heading": "Permanent Residence Permit",
+          "subHeading": "Pobyt Stały",
+          "content": "A permanent residence card with an indefinite decision and a card valid for 10 or 5 years. This type of permit can be obtained on grounds such as Polish Card, Polish roots, continuous stay of more than 5 years in Poland, etc."
+        },
+        {
+          "heading": "Polish Citizenship",
+          "subHeading": "Obywatelstwo",
+          "content": "You can obtain a Polish passport if you have a permanent residence permit or have lived in Poland for more than 10 years. The citizenship process is explained in detail during the consultation."
+        },
+        {
+          "heading": "Polish Card",
+          "subHeading": "Karta Polaka",
+          "content": "The Polish Card can be obtained by people of Polish origin who can prove their Polish roots and knowledge of the Polish language. It is also available for foreigners who support Polish culture and identity."
+        },
+        {
+          "heading": "Appeal",
+          "subHeading": "Odwołanie",
+          "content": "An appeal can be filed in case of refusal or if the foreigner disagrees with the decision. We analyze the case individually and prepare all necessary documents to change the decision."
+        },
+        {
+          "heading": "Consultation",
+          "subHeading": "Konsultacja",
+          "content": "We offer individual consultations to discuss all issues related to legalization and immigration. We thoroughly examine your situation and offer the best solutions."
         }
+      ]
+    },
+    "AboutUsSection": {
+      "title": "About Us",
+      "subTitle": "My name is Katsiaryna Matsveyeva, and I am the founder of a company specializing in supporting foreigners with relocation and legalization in Poland. Having lived in Poland for over 8 years, I have gone from a visa to obtaining Polish citizenship, and this experience became the foundation of my professional activity. I graduated from a Polish university, participated in numerous specialized trainings, and continuously enhance my expertise in immigration law and legalization. My team's mission is to help each client find the optimal path to obtaining residence permits or citizenship, providing support at every stage of the process."
+    },
+    "ContactsSection": {
+      "nameLabel": "Name",
+      "namePlaceholder": "Enter your name",
+      "phoneLabel": "Phone number",
+      "phonePlaceholder": "+48XXXXXXXXXX",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Describe your issue",
+      "submitButton": "Send",
+      "successMessage": "Message successfully sent!",
+      "errorMessage": "Error while sending:",
+      "errorOccurred": "An error occurred while sending"
+    },
+    "FooterSection": {
+      "contactInfoTitle": "Contact Information",
+      "name": "Katsiaryna Matsveyeva",
+      "nip": "NIP: 8943197670",
+      "email": "support@kamadocuments.com",
+      "city": "Wrocław",
+      "address": "Wita Stwosza 3/622",
+      "postalCode": "50-148",
+      "linksTitle": "Links",
+      "home": "Home",
+      "contacts": "Contacts",
+      "aboutUs": "About Us",
+      "privacyPolicy": "Privacy Policy",
+      "socialMediaTitle": "Social Media",
+      "copyright": "Copyright © 2024 All rights reserved"
+    }
   }
 }

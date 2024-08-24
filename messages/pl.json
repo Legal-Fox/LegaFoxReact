@@ -1,23 +1,113 @@
 {
-     "Header": {
-       "ModeToggle": {
-         "lightLabel": "Jasny",
-         "darkLabel": "Ciemny",
-         "systemLabel": "System",
-         "toggleTheme": "Zmień motyw"
-       },
-       "LanguageToggle": {
-         "english": "Angielski",
-         "polski": "Polski",
-         "ukrainian": "Ukraiński",
-         "russian": "Rosyjski",
-         "changeLanguage": "Zmień język"
-       },
-       "Nav": {
-        "home": "Strona główna",
-        "about": "O nas",
-        "contacts": "Kontakty"
+  "Header": {
+    "ModeToggle": {
+      "lightLabel": "Jasny",
+      "darkLabel": "Ciemny",
+      "systemLabel": "System",
+      "toggleTheme": "Przełącz motyw"
+    },
+    "LanguageToggle": {
+      "changeLanguage": "Zmień język",
+      "english": "Angielski",
+      "polski": "Polski",
+      "ukrainian": "Ukraiński",
+      "russian": "Rosyjski"
+    },
+    "Nav": {
+      "home": "Strona główna",
+      "about": "O nas",
+      "contacts": "Kontakt"
+    }
+  },
+  "HomePage": {
+    "HeroSection": {
+      "title": "Usługi legalizacyjne w Polsce",
+      "subTitle": "Witamy w KaMa Documents, Twoim niezawodnym partnerze w procesie legalizacji pobytu w Polsce. Nasz zespół upraszcza złożony proces imigracji dla cudzoziemców, pozostaje w kontakcie na wszystkich etapach i zajmuje się wszystkimi procedurami biurokratycznymi.",
+      "heroButton": "Złóż wniosek"
+    },
+    "ServicesSection": {
+      "title": "Nasze usługi",
+      "subTitle": "Pomagamy klientom w uzyskaniu wszelkiego rodzaju zezwoleń na pobyt, pobytu stałego oraz obywatelstwa, a także oferujemy indywidualne konsultacje.",
+      "cards": [
+        {
+          "heading": "Tymczasowe zezwolenie na pobyt",
+          "subHeading": "Pobyt Czasowy",
+          "content": "Karta pobytu ważna do 3 lat. Ten typ zezwolenia można uzyskać na podstawie pracy, studiów, działalności gospodarczej, łączenia rodzin, konkubinatu, małżeństwa z obywatelem RP itp."
+        },
+        {
+          "heading": "Stałe zezwolenie na pobyt",
+          "subHeading": "Pobyt Stały",
+          "content": "Karta pobytu z decyzją na czas nieokreślony oraz plastikowa karta ważna na 10 lub 5 lat. Ten typ zezwolenia można uzyskać na podstawie Karty Polaka, polskich korzeni, ciągłego pobytu dłuższego niż 5 lat w Polsce itp."
+        },
+        {
+          "heading": "Obywatelstwo polskie",
+          "subHeading": "Obywatelstwo",
+          "content": "Możesz uzyskać polski paszport, jeśli masz pobyt stały lub mieszkasz w Polsce dłużej niż 10 lat. Proces uzyskania obywatelstwa jest szczegółowo omawiany podczas konsultacji."
+        },
+        {
+          "heading": "Karta Polaka",
+          "subHeading": "Karta Polaka",
+          "content": "Kartę Polaka mogą uzyskać osoby polskiego pochodzenia, które udowodnią swoje polskie korzenie i znajomość języka polskiego. Jest ona również dostępna dla cudzoziemców wspierających kulturę i tożsamość polską."
+        },
+        {
+          "heading": "Odwołanie",
+          "subHeading": "Odwołanie",
+          "content": "Odwołanie można złożyć w przypadku odmowy lub niezgody cudzoziemca z decyzją. Indywidualnie analizujemy przypadek i przygotowujemy wszystkie niezbędne dokumenty do zmiany decyzji."
+        },
+        {
+          "heading": "Konsultacja",
+          "subHeading": "Konsultacja",
+          "content": "Oferujemy indywidualne konsultacje, aby omówić wszystkie kwestie związane z legalizacją i imigracją. Dokładnie analizujemy Twoją sytuację i proponujemy najlepsze rozwiązania."
+        }
+      ]
+    },
+    "AboutUsSection": {
+      "title": "O nas",
+      "subTitle": "Nazywam się Katsiaryna Matsveyeva i jestem założycielką firmy specjalizującej się we wsparciu cudzoziemców w kwestiach związanych z przeprowadzką i legalizacją pobytu w Polsce. Mieszkając w Polsce od ponad 8 lat, przeszłam drogę od wizy po uzyskanie polskiego obywatelstwa, a to doświadczenie stało się fundamentem mojej działalności zawodowej. Ukończyłam uczelnię w Polsce, uczestniczyłam w wielu specjalistycznych szkoleniach i ciągle podnoszę swoje kwalifikacje w zakresie prawa imigracyjnego i legalizacji. Moja misja i misja mojego zespołu polega na pomaganiu każdemu klientowi w znalezieniu optymalnej ścieżki do uzyskania zezwoleń na pobyt lub obywatelstwa, zapewniając wsparcie na każdym etapie procesu."
+    },
+    "ContactsSection": {
+      "title": "Kontakt",
+      "subTitle": "Skontaktuj się z nami w dogodny sposób",
+      "titleCard": "Skontaktuj się z nami",
+      "subTitleCard": "Wypełnij formularz, a my skontaktujemy się z Tobą wkrótce.",
+      "nameLabel": "Imię",
+      "namePlaceholder": "Wprowadź swoje imię",
+      "phoneLabel": "Numer telefonu",
+      "phonePlaceholder": "+48XXXXXXXXXX",
+      "messageLabel": "Wiadomość",
+      "messagePlaceholder": "Opisz swój problem",
+      "submitButton": "Wyślij",
+      "successMessage": "Wiadomość wysłana pomyślnie!",
+      "errorMessage": "Błąd podczas wysyłania wiadomości:",
+      "errorOccurred": "Wystąpił błąd podczas wysyłania",
+      "ValidationMessages": {
+        "name": {
+          "minLength": "Imię musi zawierać co najmniej 3 znaki."
+        },
+        "phone": {
+          "invalid": "Wprowadź prawidłowy numer telefonu. Numer powinien zaczynać się od kodu kraju, na przykład +48XXXXXXXXXX.",
+          "length": "Numer telefonu musi zawierać od 10 do 15 cyfr."
+        },
+        "message": {
+          "minLength": "Wiadomość musi zawierać co najmniej 10 znaków."
+        }
       }
-     }
-   }
-   
+    },
+    "FooterSection": {
+      "contactInfoTitle": "Informacje kontaktowe",
+      "name": "Katsiaryna Matsveyeva",
+      "nip": "NIP: 8943197670",
+      "email": "support@kamadocuments.com",
+      "city": "Wrocław",
+      "address": "Wita Stwosza 3/622",
+      "postalCode": "50-148",
+      "linksTitle": "Linki",
+      "home": "Strona główna",
+      "contacts": "Kontakt",
+      "aboutUs": "O nas",
+      "privacyPolicy": "Polityka prywatności",
+      "socialMediaTitle": "Media społecznościowe",
+      "copyright": "Copyright © 2024 Wszystkie prawa zastrzeżone"
+    }
+  }
+}
