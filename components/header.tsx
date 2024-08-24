@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl'
+import { StarFilledIcon } from "@radix-ui/react-icons";
 
 import { ModeToggle } from "./ModeToggle"
 import { LanguageToggle } from './LanguageToggle'
@@ -13,7 +14,7 @@ export default function Header() {
 
   return (
     <header className="flex container mx-auto justify-between items-center">
-      Logo
+      <div className='flex items-center gap-x-2'><StarFilledIcon className="w-12 h-12" /><h3 className='text-3xl'>Logo</h3></div>
       <nav className="flex items-center space-x-6">
         <NavMenu 
           home={tLanguageNavMenu('home')}
