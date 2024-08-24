@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 
 import { cn } from "@/lib/utils"
-import { HOME_ROUTE, ABOUT_ROUTE, CONTACTS_ROUTE } from '@/constants/routes'
+import { HOME_ROUTE, ABOUT_ROUTE, CONTACTS_ROUTE,  } from '@/constants/routes'
 
 interface NavMenuProps {
   home: string

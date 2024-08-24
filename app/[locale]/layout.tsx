@@ -1,13 +1,11 @@
 import { Inter } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
-
 import "./globals.css";
 import Header from '@/components/Header'
-import  ThemeProvider from '@/providers/ThemeProvider'
-
+import Footer from "@/components/Footer";
+import ThemeProvider from '@/providers/ThemeProvider'
 import type { Metadata } from "next";
-
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,21 +22,21 @@ export default async function LocaleLayout({
   params: {locale: string};
 }) {
   const messages = await getMessages()
- 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body className={inter.className}>
-      <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-        <Header />
-        <NextIntlClientProvider messages={messages}>
-      {children}
-      </NextIntlClientProvider>
-      </ThemeProvider>
+      <body className={`${inter.className} flex flex-col min-h-screen`}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <NextIntlClientProvider messages={messages}>
+            <Header />
+              {children}
+            <Footer />
+          </NextIntlClientProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
