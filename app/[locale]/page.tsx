@@ -6,6 +6,7 @@ import ProfileHighlights from "@/components/ProfileHighlights";
 import HeroImage from "@/components/HeroImage";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
 import ContactForm from "@/components/ContactForm";
+import Map from "@/components/Map";
 
 export default function Home() {
   const tHero = useTranslations('HomePage.HeroSection')
@@ -74,6 +75,10 @@ export default function Home() {
       }
     },
   };
+  const locationInMap = {
+    lat: 39.60128890889341,
+    lng: -9.069839810859907,
+  };
 
   return (
     <main className="container mx-auto">
@@ -124,23 +129,32 @@ export default function Home() {
         <HeroImage />
       </div>
 {/* Contacts Section */}
-<div className="flex justify-between items-center h-[1100px] relative bg-slate-200 ">
-      <section className="w-[600px]">
-      <h2 className="text-6xl font-semibold mb-7">{tContacts('title')}</h2>
-      <p className="text-2xl mb-14">{tContacts('subTitle')}</p>
-        <Card className="w-[350px] bg-red-100 text-left mx-auto">
-          <CardHeader className="flex flex-row items-center">
-            <div>
-              <CardTitle>{tContacts('titleCard')}</CardTitle>
-              <CardDescription>{tContacts('subTitleCard')}</CardDescription>
-            </div>
-          </CardHeader>
-          <CardContent>
-            <ContactForm contactTranslations={contactTranslations} />
-          </CardContent>
-        </Card>
-      </section>
-    </div>
+<section className="relative bg-slate-200 py-12">
+  <header className="text-center mb-10">
+    <h1 className="text-6xl font-semibold mb-4">{tContacts('title')}</h1>
+    <p className="text-2xl">{tContacts('subTitle')}</p>
+  </header>
+
+  <div className="container mx-auto flex flex-col lg:flex-row justify-between items-start lg:items-center">
+    <article className="w-full lg:w-[600px] mb-10 lg:mb-0">
+      <Card className="bg-red-100 text-left mx-auto">
+        <CardHeader className="flex flex-row items-center p-6">
+          <div>
+            <CardTitle className="text-3xl font-semibold">{tContacts('titleCard')}</CardTitle>
+            <CardDescription className="text-lg">{tContacts('subTitleCard')}</CardDescription>
+          </div>
+        </CardHeader>
+        <CardContent className="p-6">
+          <ContactForm contactTranslations={contactTranslations} />
+        </CardContent>
+      </Card>
+    </article>
+
+    <aside className="w-full lg:w-[600px] h-[400px] lg:h-[600px]">
+      <Map location={locationInMap} />
+    </aside>
+  </div>
+</section>
     </main>
   );
 }
