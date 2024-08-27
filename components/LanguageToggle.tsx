@@ -11,9 +11,14 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-
+import {
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 interface LanguageToggleProps {
+  variant: 'dropdown' | 'accordion'
   englishLabel: string
   polishLabel: string
   ukrainianLabel: string
@@ -21,7 +26,8 @@ interface LanguageToggleProps {
   changeLanguageLabel: string
 }
 
-export function LanguageToggle({
+export default function LanguageToggle({
+  variant,
   englishLabel,
   polishLabel,
   ukrainianLabel,
@@ -36,6 +42,8 @@ starTransition (()=> {
 router.replace(`/${newLocale}`)
 })
 }
+
+if (variant === 'dropdown') {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -60,4 +68,20 @@ router.replace(`/${newLocale}`)
       </DropdownMenuContent>
     </DropdownMenu>
   )
+}
+  if (variant === 'accordion') {
+    return (
+      <AccordionItem value="language">
+      <AccordionTrigger>{changeLanguageLabel}</AccordionTrigger>
+      <AccordionContent>
+        <ul className="space-y-2 flex flex-col items-start">
+          <Button variant="link"><li onClick={() => changeLanguage('en')}>{englishLabel}</li></Button>
+          <Button variant="link"><li onClick={() => changeLanguage('pl')}>{polishLabel}</li></Button>
+          <Button variant="link"><li onClick={() => changeLanguage('ua')}>{ukrainianLabel}</li></Button>
+          <Button variant="link"><li onClick={() => changeLanguage('ru')}>{russianLabel}</li></Button>
+        </ul>
+      </AccordionContent>
+    </AccordionItem>
+    )
+  }
 }

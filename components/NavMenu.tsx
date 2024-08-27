@@ -1,50 +1,78 @@
-'use client'
+'use client';
 
-import { useMemo } from 'react'
-import { usePathname } from 'next/navigation'
-import Link from 'next/link'
+import React, { useMemo } from 'react';
+import { usePathname } from 'next/navigation';
+import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import { HOME_ROUTE, ABOUT_ROUTE, CONTACTS_ROUTE, PRIVACY_POLICY_ROUTE } from '@/constants/routes';
 
-import { cn } from "@/lib/utils"
-import { HOME_ROUTE, ABOUT_ROUTE, CONTACTS_ROUTE,  } from '@/constants/routes'
-
-interface NavMenuProps {
-  home: string
-  about: string
-  contacts: string
+interface NavLinkProps {
+  href: string;
+  label: string;
+  isActive: boolean;
+  className?: string;
 }
 
-export default function NavMenu({home, about, contacts} :NavMenuProps ) {
-  const pathName = usePathname()
-
-  const routes = useMemo(() => [
-    {
-      label: home,
-      active: pathName === HOME_ROUTE || pathName.startsWith(HOME_ROUTE),
-      href: HOME_ROUTE,
-    },
-    {
-      label: about,
-      active: pathName.startsWith(ABOUT_ROUTE),
-      href: ABOUT_ROUTE,
-    },
-    {
-      label: contacts,
-      active: pathName.startsWith(CONTACTS_ROUTE),
-      href: CONTACTS_ROUTE,
-    },
-  ], [about, contacts, home, pathName])
+const NavLink: React.FC<NavLinkProps> = ({ href, label, isActive, className }) => {
+  const linkClasses = cn(
+    "transition-colors hover:text-foreground/80",
+    isActive && "text-foreground pointer-events-none font-semibold underline",
+    !isActive && "text-foreground/60",
+    className
+  );
 
   return (
-    <>
-      {routes.map((item) => (
-        <Link
-          key={item.href}
-          className={cn(item.active && 'underline')}
-          href={item.href}
-        >
-          {item.label}
-        </Link>
-      ))}
-    </>
-  )
+    <Button
+      variant="link"
+      asChild={!isActive}
+      className={linkClasses}
+      aria-current={isActive ? 'page' : undefined}
+    >
+      {isActive ? (
+        <span>{label}</span>
+      ) : (
+        <Link href={href}>{label}</Link>
+      )}
+    </Button>
+  );
+};
+
+interface NavMenuProps {
+  variant: 'header' | 'footer' | 'default';
+  className?: string;
+}
+
+export default function NavMenu({ variant, className }: NavMenuProps) {
+  const tNavMenu = useTranslations('Components.Nav');
+  const pathName = usePathname() ?? '';
+
+  const routes = useMemo(() => [
+    { label: tNavMenu('home'), href: HOME_ROUTE },
+    { label: tNavMenu('about'), href: ABOUT_ROUTE },
+    { label: tNavMenu('contacts'), href: CONTACTS_ROUTE },
+    { label: tNavMenu('privacyPolicy'), href: PRIVACY_POLICY_ROUTE },
+  ], [tNavMenu]);
+
+  const filteredRoutes = useMemo(() => 
+    variant === 'header' ? routes.slice(0, 3) : routes, 
+  [variant, routes]);
+
+  return (
+    <nav>
+      <ul className={cn("flex", className)}>
+        {filteredRoutes.map((item) => (
+          <li key={item.href}>
+            <NavLink
+              href={item.href}
+              label={item.label}
+              isActive={pathName.startsWith(item.href)}
+              className={variant === 'footer' ? 'text-sm' : ''}
+            />
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
 }

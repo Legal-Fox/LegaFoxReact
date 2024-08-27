@@ -12,11 +12,6 @@
       "polski": "Polski",
       "ukrainian": "Ukrainian",
       "russian": "Russian"
-    },
-    "Nav": {
-      "home": "Home",
-      "about": "About",
-      "contacts": "Contacts"
     }
   },
   "HomePage": {
@@ -92,6 +87,14 @@
       "privacyPolicy": "Privacy Policy",
       "socialMediaTitle": "Social Media",
       "copyright": "Copyright © 2024 All rights reserved"
+    }
+  },
+  "Components": {
+    "Nav": {
+      "home": "Home",
+      "about": "About",
+      "contacts": "Contacts",
+      "privacyPolicy": "Privacy Policy"
     }
   }
 }
