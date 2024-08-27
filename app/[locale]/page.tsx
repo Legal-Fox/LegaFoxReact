@@ -4,9 +4,10 @@ import { useTranslations } from 'next-intl'
 import { Button } from "@/components/ui/button";
 import ProfileHighlights from "@/components/ProfileHighlights";
 import HeroImage from "@/components/HeroImage";
-import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"
 import ContactForm from "@/components/ContactForm";
 import Map from "@/components/Map";
+import { LOCATION_IN_MAP } from '@/constants/setting'
 
 export default function Home() {
   const tHero = useTranslations('HomePage.HeroSection')
@@ -74,10 +75,6 @@ export default function Home() {
         minLength: tContacts('ValidationMessages.message.minLength'),
       }
     },
-  };
-  const locationInMap = {
-    lat: 39.60128890889341,
-    lng: -9.069839810859907,
   };
 
   return (
@@ -151,7 +148,7 @@ export default function Home() {
     </article>
 
     <aside className="w-full lg:w-[600px] h-[400px] lg:h-[600px]">
-      <Map location={locationInMap} />
+      <Map location={LOCATION_IN_MAP} />
     </aside>
   </div>
 </section>
