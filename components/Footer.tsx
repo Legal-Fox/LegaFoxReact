@@ -1,7 +1,6 @@
 import React from 'react';
 import { useTranslations } from 'next-intl';
-import Link from 'next/link';
-import { LinkedInLogoIcon, NotionLogoIcon, InstagramLogoIcon, StarFilledIcon } from "@radix-ui/react-icons";
+import { StarFilledIcon } from "@radix-ui/react-icons";
 
 import { HOME_ROUTE, ABOUT_ROUTE, CONTACTS_ROUTE, PRIVACY_POLICY_ROUTE } from '@/constants/routes';
 import { SocialLinks } from '@/components/SocialLinks'
