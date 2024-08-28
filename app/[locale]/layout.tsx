@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl'
+import {getTranslations} from 'next-intl/server';
 import { getMessages } from 'next-intl/server'
 
 import "./globals.css";
@@ -7,6 +8,8 @@ import Header from '@/components/Header'
 import Footer from "@/components/Footer";
 import ThemeProvider from '@/providers/ThemeProvider'
 import type { Metadata } from "next";
+import StickyScrollToTopButton from '@/components/StickyScrollToTopButton'
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +26,8 @@ export default async function LocaleLayout({
   params: {locale: string};
 }) {
   const messages = await getMessages()
+  const tStickyScrollToTopButton = await getTranslations('Components.StickyScrollToTopButton')
+
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className={`${inter.className} flex flex-col min-h-screen`}>
@@ -36,7 +41,10 @@ export default async function LocaleLayout({
             <Header />
               {children}
             <Footer />
-          </NextIntlClientProvider>
+            <StickyScrollToTopButton 
+            StickyScrollToTopButton={tStickyScrollToTopButton('scrollToTop')} 
+            />
+</NextIntlClientProvider>
         </ThemeProvider>
       </body>
     </html>

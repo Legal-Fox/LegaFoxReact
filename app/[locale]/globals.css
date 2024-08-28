@@ -58,6 +58,9 @@
     --chart-5: 340 75% 55%;
   }
 }
+.vertical-lr {
+  writing-mode: vertical-rl;
+}
 
 @layer base {
   * {
