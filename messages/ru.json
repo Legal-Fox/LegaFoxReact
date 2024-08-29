@@ -16,7 +16,8 @@
     "Nav": {
       "home": "Главная",
       "about": "О нас",
-      "contacts": "Контакты"
+      "contacts": "Контакты",
+      "privacyPolicy": "Политика конфиденциальности"
     }
   },
   "HomePage": {
@@ -91,7 +92,8 @@
         "message": {
           "minLength": "Сообщение должно содержать минимум 10 символов."
         }
-      },
+      }
+    },
     "FooterSection": {
       "contactInfoTitle": "Контактная информация",
       "name": "Katsiaryna Matsveyeva",
@@ -108,6 +110,16 @@
       "socialMediaTitle": "Социальные сети",
       "copyright": "Copyright © 2024 Все права защищены"
     }
+  },
+  "Components": {
+    "StickyScrollToTopButton": {
+      "scrollToTop": "Прокрутить вверх"
+    },
+    "Nav": {
+      "home": "Главная",
+      "about": "О нас",
+      "contacts": "Контакты",
+      "privacyPolicy": "Политика конфиденциальности"
+    }
   }
-}
 }

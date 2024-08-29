@@ -70,7 +70,23 @@
       "submitButton": "Send",
       "successMessage": "Message successfully sent!",
       "errorMessage": "Error while sending:",
-      "errorOccurred": "An error occurred while sending"
+      "errorOccurred": "An error occurred while sending",
+      "title": "Contacts",
+      "subTitle": "Get in touch with us via any convenient method",
+      "titleCard": "Contact Us",
+      "subTitleCard": "Fill out the form and we'll get in touch with you shortly",
+      "ValidationMessages": {
+        "name": {
+          "minLength": "The name must be at least 3 characters long."
+        },
+        "phone": {
+          "invalid": "Please enter a valid phone number. The number should start with a country code, e.g., +48XXXXXXXXXX.",
+          "length": "The phone number should be between 10 and 15 digits long."
+        },
+        "message": {
+          "minLength": "The message must be at least 10 characters long."
+        }
+      }
     },
     "FooterSection": {
       "contactInfoTitle": "Contact Information",
@@ -90,6 +106,9 @@
     }
   },
   "Components": {
+    "StickyScrollToTopButton": {
+      "scrollToTop": "Scroll to top"
+    },
     "Nav": {
       "home": "Home",
       "about": "About",

@@ -12,11 +12,6 @@
       "polski": "Polski",
       "ukrainian": "Ukraiński",
       "russian": "Rosyjski"
-    },
-    "Nav": {
-      "home": "Strona główna",
-      "about": "O nas",
-      "contacts": "Kontakt"
     }
   },
   "HomePage": {
@@ -66,10 +61,6 @@
       "subTitle": "Nazywam się Katsiaryna Matsveyeva i jestem założycielką firmy specjalizującej się we wsparciu cudzoziemców w kwestiach związanych z przeprowadzką i legalizacją pobytu w Polsce. Mieszkając w Polsce od ponad 8 lat, przeszłam drogę od wizy po uzyskanie polskiego obywatelstwa, a to doświadczenie stało się fundamentem mojej działalności zawodowej. Ukończyłam uczelnię w Polsce, uczestniczyłam w wielu specjalistycznych szkoleniach i ciągle podnoszę swoje kwalifikacje w zakresie prawa imigracyjnego i legalizacji. Moja misja i misja mojego zespołu polega na pomaganiu każdemu klientowi w znalezieniu optymalnej ścieżki do uzyskania zezwoleń na pobyt lub obywatelstwa, zapewniając wsparcie na każdym etapie procesu."
     },
     "ContactsSection": {
-      "title": "Kontakt",
-      "subTitle": "Skontaktuj się z nami w dogodny sposób",
-      "titleCard": "Skontaktuj się z nami",
-      "subTitleCard": "Wypełnij formularz, a my skontaktujemy się z Tobą wkrótce.",
       "nameLabel": "Imię",
       "namePlaceholder": "Wprowadź swoje imię",
       "phoneLabel": "Numer telefonu",
@@ -78,8 +69,12 @@
       "messagePlaceholder": "Opisz swój problem",
       "submitButton": "Wyślij",
       "successMessage": "Wiadomość wysłana pomyślnie!",
-      "errorMessage": "Błąd podczas wysyłania wiadomości:",
+      "errorMessage": "Błąd podczas wysyłania:",
       "errorOccurred": "Wystąpił błąd podczas wysyłania",
+      "title": "Kontakt",
+      "subTitle": "Skontaktuj się z nami w dogodny sposób",
+      "titleCard": "Skontaktuj się z nami",
+      "subTitleCard": "Wypełnij formularz, a my skontaktujemy się z Tobą wkrótce",
       "ValidationMessages": {
         "name": {
           "minLength": "Imię musi zawierać co najmniej 3 znaki."
@@ -108,6 +103,17 @@
       "privacyPolicy": "Polityka prywatności",
       "socialMediaTitle": "Media społecznościowe",
       "copyright": "Copyright © 2024 Wszystkie prawa zastrzeżone"
+    }
+  },
+  "Components": {
+    "StickyScrollToTopButton": {
+      "scrollToTop": "Przewiń do góry"
+    },
+    "Nav": {
+      "home": "Strona główna",
+      "about": "O nas",
+      "contacts": "Kontakt",
+      "privacyPolicy": "Polityka prywatności"
     }
   }
 }
