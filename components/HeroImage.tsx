@@ -1,43 +1,27 @@
-import Image from "next/image";
-import { StarFilledIcon } from "@radix-ui/react-icons";
+import Image from "next/image"
+import { StarFilledIcon } from "@radix-ui/react-icons"
 
-import Hero from '@/public/img/hero.png';
 
-const CirclePattern = () => (
-  <svg width="100%" height="100%">
-    <pattern id="pattern-circles" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-      <circle cx="10" cy="10" r="2" fill="#000" />
-    </pattern>
-    <rect x="0" y="0" width="100%" height="100%" fill="url(#pattern-circles)" />
-  </svg>
-);
+import { CirclePattern } from '@/public/svg/CirclePattern'
+import { BackgroundCircle } from '@/public/svg/BackgroundCircle'
+import ProfileHighlights from "@/components/ProfileHighlights"
 
-const BackgroundCircle = () => (
-  <svg
-    className="absolute top-[200px] left-0 -z-10"
-    width="800"
-    height="800"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <circle cx="400" cy="400" r="400" fill="blue" />
-  </svg>
-);
+import Hero from '@/public/img/hero.png'
 
 export default function HeroImage() {
   return (
-    <div className="absolute bottom-0 left-1/4 w-[800px] h-[800px] overflow-hidden">
-      <StarFilledIcon className="absolute left-20 top-40" />
-      <StarFilledIcon className="absolute right-20 bottom-40" />
-      <div className="h-56 w-32 absolute bottom-4">
-        <CirclePattern />
-      </div>
+    <div className="absolute bottom-0 md:left-1/4 sm:w-[600px] sm:h-[600px] md:w-[700px] md:h-[700px] xl:w-[800px] xl:h-[800px] w-[400px] h-[400px] overflow-hidden">
+      <StarFilledIcon className="absolute sm:left-20 top-40 sm:h-24 sm:w-24 h-8 w-8" />
+      <StarFilledIcon className="absolute right-20 sm:bottom-40 bottom-0 sm:h-24 sm:w-24 h-8 w-8" />
+      <CirclePattern className='h-56 w-32 absolute bottom-4' />
+      <BackgroundCircle className='absolute top-[200px] left-0 sm:w-[800px] sm:h-[800px] w-72 h-72 -z-0' />
+      <ProfileHighlights className='absolute right-10 top-14' yearsOfExperience={7} rating={5} />
       <Image 
-        src={Hero} 
-        alt="Фото команды" 
-        className="absolute inset-0 w-full h-full object-cover z-10"
+        src={Hero}
+        alt="Фото команды"
+        className="absolute inset-0 w-full h-full object-cover"
         priority
       />
-      <BackgroundCircle />
     </div>
   );
 }

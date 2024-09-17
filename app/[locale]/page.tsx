@@ -2,7 +2,6 @@ import { ArrowTopRightIcon, AccessibilityIcon, RocketIcon, MagicWandIcon, Backpa
 import { useTranslations } from 'next-intl'
 
 import { Button } from "@/components/ui/button";
-import ProfileHighlights from "@/components/ProfileHighlights";
 import HeroImage from "@/components/HeroImage";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"
 import ContactForm from "@/components/ContactForm";
@@ -80,13 +79,12 @@ export default function Home() {
   return (
     <main className="container mx-auto">
       {/* Hero Section */}
-      <div className="flex justify-between items-center h-[1100px] relative bg-slate-100 -z-20">
-        <section className="w-[600px]">
-          <h1 className="text-6xl font-semibold mb-7">{tHero('title')}</h1>
-          <p className="text-2xl mb-14">{tHero('subTitle')}</p>
-          <Button className="text-2xl px-10 py-4">{tHero('heroButton')}<ArrowTopRightIcon className="ml-2 w-8 h-8"/></Button>
-        </section>
-        <ProfileHighlights />
+      <div className="flex md:justify-between md:items-center sm:h-[1100px] h-[900px] relative bg-slate-100">
+      <section className="w-full mt-20 sm:mt-0 sm:w-[600px] md:w-[600px] lg:w-[700px]">
+        <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-4 sm:mb-7 lg:mb-10">{tHero('title')}</h1>
+        <p className="text-sm sm:text-2xl md:text-xl lg:text-lg mb-6 lg:mb-14">{tHero('subTitle')}</p>
+        <Button className="text-sm sm:text-2xl px-6 py-2 sm:px-10 sm:py-4">{tHero('heroButton')}<ArrowTopRightIcon className="ml-1 sm:ml-2 w-6 h-6 sm:w-8 sm:h-8"/></Button>
+      </section>
         <HeroImage />
       </div>
 
@@ -146,12 +144,11 @@ export default function Home() {
         </CardContent>
       </Card>
     </article>
-
     <aside className="w-full lg:w-[600px] h-[400px] lg:h-[600px]">
       <Map location={LOCATION_IN_MAP} />
     </aside>
   </div>
 </section>
-    </main>
+</main>
   );
 }
