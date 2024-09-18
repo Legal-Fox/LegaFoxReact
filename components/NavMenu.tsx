@@ -69,7 +69,7 @@ export default function NavMenu({ variant, className }: NavMenuProps) {
               href={item.href}
               label={item.label}
               isActive={pathName.startsWith(item.href)}
-              className={variant === 'footer' ? 'text-sm' : 'text-lg'}
+              className={variant === 'footer' ? 'text-lg font-normal' : 'text-lg'}
             />
           </li>
         ))}
