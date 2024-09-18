@@ -1,5 +1,4 @@
 import { Menu } from "lucide-react";
-import { LinkedInLogoIcon, NotionLogoIcon, InstagramLogoIcon } from "@radix-ui/react-icons";
 
 import ModeToggle from "./ModeToggle";
 import LanguageToggle from './LanguageToggle';
@@ -12,9 +11,6 @@ import { cn } from "@/lib/utils";
 import Logo from "./Logo";
 
 interface MobileMenuProps {
-  home: string;
-  about: string;
-  contacts: string;
   tModeToggle: {
     lightLabel: string;
     darkLabel: string;
@@ -32,9 +28,6 @@ interface MobileMenuProps {
 }
 
 export default function MobileMenu({
-  home,
-  about,
-  contacts,
   tModeToggle,
   tLanguageToggle,
   className,
@@ -43,11 +36,11 @@ export default function MobileMenu({
     <Sheet>
       <SheetTrigger asChild>
         <Button variant="outline" size="icon" className={cn("md:hidden", className)}>
-          <Menu className="h-[1.2rem] w-[1.2rem]" />
+          <Menu className="h-6 w-6" />
           <span className="sr-only">Toggle menu</span>
         </Button>
       </SheetTrigger>
-      <SheetContent side="left" className="w-[300px] sm:w-[400px]">
+      <SheetContent side="left" className="w-3/4">
         <nav className="flex flex-col space-y-4">
         <SheetTitle><Logo variant="dialog"/></SheetTitle>
           <Accordion type="single" collapsible className="w-full">
@@ -67,12 +60,7 @@ export default function MobileMenu({
               toggleTheme={tModeToggle.toggleTheme}
             />
           </Accordion>
-          <NavMenu 
-            className='flex-col'
-            home={home}
-            about={about}
-            contacts={contacts}
-          />
+          <NavMenu variant='default' className='flex-col'/>
         </nav>
         <SocialLinks 
           variant="sidebar"  

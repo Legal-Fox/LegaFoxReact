@@ -26,7 +26,7 @@ export const SocialLinks: React.FC<SocialLinksProps> = ({ variant, className }) 
               variant="outline"
               size="icon"
               asChild
-              className="w-8 h-8 rounded-full border-2 border-emerald-400 hover:bg-emerald-400 transition-colors group"
+              className="w-8 h-8 fill-primary"
             >
               <a
                 href={social.url}
@@ -34,7 +34,7 @@ export const SocialLinks: React.FC<SocialLinksProps> = ({ variant, className }) 
                 rel="noopener noreferrer"
                 className="flex items-center justify-center"
               >
-                <social.icon className="w-4 h-4 text-emerald-500 group-hover:text-white transition-colors" />
+                <social.icon className="w-8 h-8 fill-foreground-secondary/80 border border-ring/40 p-1 rounded-full hover:border-ring/100 hover:fill-foreground-secondary/100" />
                 <span className="sr-only">{social.name}</span>
               </a>
             </Button>
@@ -63,7 +63,7 @@ export const SocialLinks: React.FC<SocialLinksProps> = ({ variant, className }) 
       ))}
       {isSidebar && (
         <li>
-          <div className="flex flex-col justify-center items-center mx-auto h-32 w-1 bg-red-400 mt-2" />
+          <div className="flex flex-col justify-center items-center mx-auto h-32 w-0.5 bg-foreground-secondary mt-2" />
         </li>
       )}
     </ul>

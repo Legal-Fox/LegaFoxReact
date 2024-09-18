@@ -3,7 +3,8 @@
 import React, { useMemo } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from 'next-intl'
+
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { HOME_ROUTE, ABOUT_ROUTE, CONTACTS_ROUTE, PRIVACY_POLICY_ROUTE } from '@/constants/routes';
@@ -68,7 +69,7 @@ export default function NavMenu({ variant, className }: NavMenuProps) {
               href={item.href}
               label={item.label}
               isActive={pathName.startsWith(item.href)}
-              className={variant === 'footer' ? 'text-sm' : ''}
+              className={variant === 'footer' ? 'text-sm' : 'text-lg'}
             />
           </li>
         ))}

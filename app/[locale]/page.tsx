@@ -79,7 +79,7 @@ export default function Home() {
   return (
     <main className="container mx-auto">
       {/* Hero Section */}
-      <div className="flex md:justify-between md:items-center sm:h-[1100px] h-[900px] relative bg-slate-100">
+      <div className="flex md:justify-between md:items-center sm:h-[1100px] h-[900px] relative">
       <section className="w-full mt-20 sm:mt-0 sm:w-[600px] md:w-[600px] lg:w-[700px]">
         <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-4 sm:mb-7 lg:mb-10">{tHero('title')}</h1>
         <p className="text-sm sm:text-2xl md:text-xl lg:text-lg mb-6 lg:mb-14">{tHero('subTitle')}</p>
@@ -116,7 +116,7 @@ export default function Home() {
       </div>
 
       {/* About Section */}
-      <div className="flex justify-between items-center h-[1100px] relative bg-slate-100 -z-20">
+      <div className="flex justify-between items-center h-[1100px] relative bg-background-secondary -z-20">
         <section className="w-[600px]">
           <h2 className="text-6xl font-semibold mb-7">{tAbout('title')}</h2>
           <p className="text-2xl mb-14">{tAbout('subTitle')}</p>

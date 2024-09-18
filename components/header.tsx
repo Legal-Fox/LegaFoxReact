@@ -9,16 +9,12 @@ import Logo from './Logo';
 export default function Header() {
   const tModeToggle = useTranslations('Header.ModeToggle')
   const tLanguageToggle = useTranslations('Header.LanguageToggle')
-  const tLanguageNavMenu = useTranslations('Header.Nav')
 
   return (
-    <header className="flex container mx-auto justify-between items-center">
+    <header className="flex container mx-auto justify-between items-center mt-6 text-foreground-secondary">
       <Logo variant="header"/>
       <MobileMenu
-        className="block lg:hidden"
-        home={tLanguageNavMenu('home')}
-        about={tLanguageNavMenu('about')}
-        contacts={tLanguageNavMenu('contacts')}
+        className="flex lg:hidden"
       tModeToggle={{
         lightLabel: tModeToggle('lightLabel'),
         darkLabel: tModeToggle('darkLabel'),
@@ -33,13 +29,9 @@ export default function Header() {
         changeLanguage: tLanguageToggle('changeLanguage'),
         }}
         />
-      <nav className="items-center space-x-6 hidden lg:flex">
-        <NavMenu 
-          home={tLanguageNavMenu('home')}
-          about={tLanguageNavMenu('about')}
-          contacts={tLanguageNavMenu('contacts')}
-        />
-        <div className="flex items-center border-l border-slate-200 ml-6 pl-6 space-x-6">
+      <nav className="items-center space-x-4 hidden lg:flex">
+        <NavMenu variant='header' />
+        <div className="flex items-center border-l border-foreground-secondary ml-4 pl-4 space-x-4">
           <ModeToggle 
             variant="dropdown"
             lightLabel={tModeToggle('lightLabel')}

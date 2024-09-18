@@ -1,7 +1,7 @@
-import { LinkedInLogoIcon, NotionLogoIcon, InstagramLogoIcon } from "@radix-ui/react-icons";
+import FacebookLogo from '@/public/svg/FacebookLogo'
+import InstagramLogo from '@/public/svg/InstagramLogo';
 
 export const SOCIAL_LINKS = [
-  { name: 'LinkedIn', icon: LinkedInLogoIcon, url: 'https://www.linkedin.com/' },
-  { name: 'Notion', icon: NotionLogoIcon, url: 'https://www.notion.so/' },
-  { name: 'Instagram', icon: InstagramLogoIcon, url: 'https://www.instagram.com/' },
+  { name: 'facebook', icon: FacebookLogo, url: 'https://www.facebook.com/LegalFox.GD' },
+  { name: 'Instagram', icon: InstagramLogo, url: 'https://www.instagram.com/julia.legalfox/' },
 ];
