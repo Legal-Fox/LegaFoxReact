@@ -1,7 +1,6 @@
 import Image from "next/image"
 import { StarFilledIcon } from "@radix-ui/react-icons"
 
-
 import { CirclePattern } from '@/public/svg/CirclePattern'
 import { BackgroundCircle } from '@/public/svg/BackgroundCircle'
 import ProfileHighlights from "@/components/ProfileHighlights"
@@ -10,16 +9,16 @@ import Hero from '@/public/img/hero.png'
 
 export default function HeroImage() {
   return (
-    <div className="absolute bottom-0 md:left-1/4 sm:w-[600px] sm:h-[600px] md:w-[700px] md:h-[700px] xl:w-[800px] xl:h-[800px] w-[400px] h-[400px] overflow-hidden">
-      <StarFilledIcon className="absolute sm:left-20 top-40 sm:h-24 sm:w-24 h-8 w-8" />
-      <StarFilledIcon className="absolute right-20 sm:bottom-40 bottom-0 sm:h-24 sm:w-24 h-8 w-8" />
-      <CirclePattern className='h-56 w-32 absolute bottom-4' />
-      <BackgroundCircle className='absolute top-[200px] left-0 sm:w-[800px] sm:h-[800px] w-72 h-72 -z-0' />
-      <ProfileHighlights className='absolute right-10 top-14' yearsOfExperience={7} rating={5} />
+    <div className="relative overflow-hidden xl:pr-20">
+      <StarFilledIcon className="absolute top-[24%] left-[6%] sm:h-6 sm:w-6 h-5 w-5 fill-primary" />
+      <StarFilledIcon className="absolute right-[5%] sm:bottom-50 bottom-[6%] sm:h-6 sm:w-24 h-5 w-5 fill-primary" />
+      <CirclePattern className='h-44 w-32 absolute left-[10%] bottom-[3%] -z-10' />
+      <BackgroundCircle className='absolute -bottom-1/4 w-full h-full -z-20 fill-popover' />
+      <ProfileHighlights className='absolute right-[7%] top-[3%]' yearsOfExperience={7} rating={5} />
       <Image 
         src={Hero}
         alt="Фото команды"
-        className="absolute inset-0 w-full h-full object-cover"
+        className="object-contain w-full h-full max-h-[85vh]"
         priority
       />
     </div>

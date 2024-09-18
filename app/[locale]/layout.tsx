@@ -1,6 +1,6 @@
 import { Raleway } from "next/font/google"
 import { NextIntlClientProvider } from 'next-intl'
-import {getTranslations} from 'next-intl/server'
+import { getTranslations } from 'next-intl/server'
 import { getMessages } from 'next-intl/server'
 
 import "./globals.css";
@@ -44,7 +44,7 @@ export default async function LocaleLayout({
         >
           <NextIntlClientProvider messages={messages}>
             <Header />
-              {/* {children} */}
+              {children}
             <Footer />
             <StickyScrollToTopButton 
             StickyScrollToTopButton={tStickyScrollToTopButton('scrollToTop')} 

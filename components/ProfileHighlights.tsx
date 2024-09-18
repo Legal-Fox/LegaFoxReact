@@ -14,7 +14,7 @@ export default function ProfileHighlights({ yearsOfExperience, rating, className
   const stars = Array.from({ length: 5 }, (_, index) => (
     <Star
       key={index}
-      className={`sm:h-8 sm:w-8 h-4 w-4 ${index < rating ? 'text-yellow-400 fill-current' : 'text-gray-300'}`}
+      className={`sm:h-6 sm:w-6 h-4 w-4 ${index < rating ? 'text-primary fill-current' : 'text-foreground'}`}
       aria-hidden="true"
     />
   ));
@@ -23,11 +23,11 @@ export default function ProfileHighlights({ yearsOfExperience, rating, className
     <div className={cn(className)}>
     <div className="flex justify-end items-end">
         <aside className="mb-4">
-        <div className="flex justify-end space-x-1" aria-label={`Рейтинг: ${rating} из 5`}>
+        <div className="flex justify-end space-x-0.5" aria-label={`Рейтинг: ${rating} из 5`}>
           {stars}
         </div>
-        <p className="sm:text-4xl text-lg text-right font-bold">{yearsOfExperience} {'Лет'}</p>
-        <p className="sm:text-2xl text-xl text-right">Опыта</p>
+        <p className="sm:text-3xl text-lg text-right font-semibold text-foreground-secondary">{yearsOfExperience} {'Лет'}</p>
+        <p className="sm:text-xl text-xl text-right font-light">Опыта</p>
       </aside>
       <SocialLinks variant="sidebar" className="xl:block hidden" />
       </div>

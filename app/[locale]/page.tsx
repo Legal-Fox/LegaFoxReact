@@ -79,11 +79,11 @@ export default function Home() {
   return (
     <main className="container mx-auto">
       {/* Hero Section */}
-      <div className="flex md:justify-between md:items-center sm:h-[1100px] h-[900px] relative">
-      <section className="w-full mt-20 sm:mt-0 sm:w-[600px] md:w-[600px] lg:w-[700px]">
-        <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-4 sm:mb-7 lg:mb-10">{tHero('title')}</h1>
-        <p className="text-sm sm:text-2xl md:text-xl lg:text-lg mb-6 lg:mb-14">{tHero('subTitle')}</p>
-        <Button className="text-sm sm:text-2xl px-6 py-2 sm:px-10 sm:py-4">{tHero('heroButton')}<ArrowTopRightIcon className="ml-1 sm:ml-2 w-6 h-6 sm:w-8 sm:h-8"/></Button>
+      <div className="flex flex-col lg:flex-row lg:items-end sm:h-[1100px] h-[900px]">
+      <section className="w-full lg:w-2/3 lg:h-2/3 flex-row  mt-12 sm:mt-10">
+        <h1 className="text-2xl sm:text-4xl md:text-4xl lg:text-6xl font-semibold mb-4 sm:mb-7 lg:mb-10">{tHero('title')}</h1>
+        <p className="pl-1 text-lg font-light sm:text-2xl md:text-lg lg:text-lg mb-6 lg:mb-14">{tHero('subTitle')}</p>
+        <Button className="text-sm sm:text-xl px-6 py-2 sm:px-10 sm:py-4 mb-10">{tHero('heroButton')}<ArrowTopRightIcon className="ml-1 sm:ml-2 w-6 h-6 sm:w-8 sm:h-8"/></Button>
       </section>
         <HeroImage />
       </div>
