@@ -153,8 +153,8 @@ export default function Home() {
     <p className="text-xl font-light">{tContacts('subTitle')}</p>
   </header>
 
-  <div className="container mx-auto flex flex-col lg:flex-row justify-between items-start lg:items-center gap-x-4">
-    <article className="w-1/2 h-full max-h-[55vh]">
+  <div className="container mx-auto flex flex-col lg:flex-row justify-between items-start lg:items-center gap-y-4 lg:gap-x-4">
+    <article className="lg:w-1/2 w-full h-full max-h-[55vh]">
       <Card className="text-left mx-auto">
         <CardHeader className="flex flex-col items-center p-6">
             <CardTitle className="text-3xl font-semibold mb-4">{tContacts('titleCard')}</CardTitle>
@@ -165,7 +165,7 @@ export default function Home() {
         </CardContent>
       </Card>
     </article>
-    <aside className="w-1/2 h-full shadow-sm">
+    <aside className="lg:w-1/2 w-full h-full max-h-[55vh] shadow-sm">
       <Map location={LOCATION_IN_MAP}> 
         <div className='text-muted-foreground flex flex-col gap-y-2 text-center items-center'>
           <Logo variant='map' />
