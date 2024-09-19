@@ -15,7 +15,6 @@ const raleway = Raleway({ subsets: ["cyrillic"] });
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
   const t = await getTranslations('Metadata');
-  console.log('Translated Keywords:', t('keywords'));
   return {
     title: t('title'),
     description: t('description'),

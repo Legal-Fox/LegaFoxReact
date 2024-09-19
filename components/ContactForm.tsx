@@ -4,6 +4,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
+import { useLocale } from 'next-intl';
 
 import { Button } from "@/components/ui/button";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
@@ -44,6 +45,7 @@ interface FormValues {
 }
 
 const ContactForm: React.FC<{ contactTranslations: ContactTranslations }> = ({ contactTranslations }) => {
+  const locale = useLocale()
   const formSchema = z.object({
     name: z.string().min(3, {
       message: contactTranslations.ValidationMessages.name.minLength,
@@ -74,7 +76,7 @@ const ContactForm: React.FC<{ contactTranslations: ContactTranslations }> = ({ c
 
   const onSubmit = async (values: FormValues) => {
     try {
-      const response = await fetch('/api/send-email', {
+      const response = await fetch(`/${locale}/api/send`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

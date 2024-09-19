@@ -22,7 +22,7 @@
   "HomePage": {
     "HeroSection": {
       "title": "Legalization Services in Poland",
-      "subTitle": "Welcome to KaMa Documents, your reliable partner in the legalization process in Poland. Our team simplifies the complex immigration process for foreigners, stays in touch at all stages, and handles all bureaucratic procedures.",
+      "subTitle": "Professional assistance in obtaining residence permits, permanent residency, and Polish citizenship. Comprehensive legalization services: from obtaining a residence card to starting a business. Individual approach and support at every stage. We work for your peaceful future in Poland.",
       "heroButton": "Submit a request"
     },
     "ServicesSection": {
@@ -66,6 +66,7 @@
       "subTitle": "My name is Katsiaryna Matsveyeva, and I am the founder of a company specializing in supporting foreigners with relocation and legalization in Poland. Having lived in Poland for over 8 years, I have gone from a visa to obtaining Polish citizenship, and this experience became the foundation of my professional activity. I graduated from a Polish university, participated in numerous specialized trainings, and continuously enhance my expertise in immigration law and legalization. My team's mission is to help each client find the optimal path to obtaining residence permits or citizenship, providing support at every stage of the process."
     },
     "ContactsSection": {
+      "mapLinkText": "View larger map",
       "nameLabel": "Name",
       "namePlaceholder": "Enter your name",
       "phoneLabel": "Phone number",

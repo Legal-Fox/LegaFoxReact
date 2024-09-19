@@ -22,7 +22,7 @@
   "HomePage": {
     "HeroSection": {
       "title": "Usługi legalizacyjne w Polsce",
-      "subTitle": "Witamy w KaMa Documents, Twoim niezawodnym partnerze w procesie legalizacji pobytu w Polsce. Nasz zespół upraszcza złożony proces imigracji dla cudzoziemców, pozostaje w kontakcie na wszystkich etapach i zajmuje się wszystkimi procedurami biurokratycznymi.",
+      "subTitle": "Profesjonalna pomoc w uzyskaniu zezwoleń na pobyt, stałego pobytu i obywatelstwa polskiego. Kompleksowe usługi legalizacyjne: od uzyskania karty pobytu po otwarcie firmy. Indywidualne podejście i wsparcie na każdym etapie. Pracujemy na rzecz Twojej spokojnej przyszłości w Polsce.",
       "heroButton": "Złóż wniosek"
     },
     "ServicesSection": {
@@ -66,6 +66,7 @@
       "subTitle": "Nazywam się Katsiaryna Matsveyeva i jestem założycielką firmy specjalizującej się we wsparciu cudzoziemców w kwestiach związanych z przeprowadzką i legalizacją pobytu w Polsce. Mieszkając w Polsce od ponad 8 lat, przeszłam drogę od wizy po uzyskanie polskiego obywatelstwa, a to doświadczenie stało się fundamentem mojej działalności zawodowej. Ukończyłam uczelnię w Polsce, uczestniczyłam w wielu specjalistycznych szkoleniach i ciągle podnoszę swoje kwalifikacje w zakresie prawa imigracyjnego i legalizacji. Moja misja i misja mojego zespołu polega na pomaganiu każdemu klientowi w znalezieniu optymalnej ścieżki do uzyskania zezwoleń na pobyt lub obywatelstwa, zapewniając wsparcie na każdym etapie procesu."
     },
     "ContactsSection": {
+      "mapLinkText": "Pokaż większą mapę",
       "nameLabel": "Imię",
       "namePlaceholder": "Wprowadź swoje imię",
       "phoneLabel": "Numer telefonu",

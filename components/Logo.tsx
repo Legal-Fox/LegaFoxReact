@@ -5,7 +5,7 @@ import { COMPANY_NAME } from "@/constants/setting";
 import LogoSvg from '@/public/svg/Logo';
 
 interface LogoProps {
-  variant: "header" | "footer" | "dialog";
+  variant: "header" | "footer" | "dialog" | "map"
   className?: string;
 }
 
@@ -50,6 +50,9 @@ export default function Logo({ variant, className }: LogoProps) {
       </div>
     );
   }
+
+    // Рендер для варианта footer
+    if (variant === "map") return <LogoSvg className="w-24 h-24 fill-m" />
 
   return null;
 }
