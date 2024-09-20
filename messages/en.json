@@ -62,8 +62,16 @@
       ]
     },
     "AboutUsSection": {
-      "title": "About Us",
-      "subTitle": "My name is Katsiaryna Matsveyeva, and I am the founder of a company specializing in supporting foreigners with relocation and legalization in Poland. Having lived in Poland for over 8 years, I have gone from a visa to obtaining Polish citizenship, and this experience became the foundation of my professional activity. I graduated from a Polish university, participated in numerous specialized trainings, and continuously enhance my expertise in immigration law and legalization. My team's mission is to help each client find the optimal path to obtaining residence permits or citizenship, providing support at every stage of the process."
+      "firstImageAlt": "photo of our team",
+      "secondImageAlt": "photo of the company founder",
+      "mainTitle": "About Us",
+      "mainDescription": "My name is Yuliia Vasylenko, and I am the founder of LegalFox. Our mission is to help foreigners successfully legalize and find employment in Poland by providing expert support at every stage of this complex process.",
+      "firstSubTitle": "Our experience is your advantage",
+      "firstDescription": "With 8 years of experience in legalization and over 4,000 positive reviews, we are proud to have helped thousands of people find a new home in Poland. Our team of experts knows all the intricacies of Polish law and is ready to guide you through every stage of obtaining the necessary documents - from temporary residence permits to Polish citizenship.",
+      "secondSubTitle": "Individual approach",
+      "secondDescription": "At LegalFox, we understand that every case is unique. That's why we offer individual solutions tailored to your specific circumstances. Our goal is not just to prepare documents, but to find the most effective path to your legalization in Poland.",
+      "thirdSubTitle": "Quality guarantee",
+      "thirdDescription": "Your positive outcome is our responsibility. We don't just promise results, we guarantee them. Our team works with full dedication to ensure the successful resolution of your case."
     },
     "ContactsSection": {
       "mapLinkText": "View larger map",

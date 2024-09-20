@@ -62,8 +62,16 @@
       ]
     },
     "AboutUsSection": {
-      "title": "O nas",
-      "subTitle": "Nazywam się Katsiaryna Matsveyeva i jestem założycielką firmy specjalizującej się we wsparciu cudzoziemców w kwestiach związanych z przeprowadzką i legalizacją pobytu w Polsce. Mieszkając w Polsce od ponad 8 lat, przeszłam drogę od wizy po uzyskanie polskiego obywatelstwa, a to doświadczenie stało się fundamentem mojej działalności zawodowej. Ukończyłam uczelnię w Polsce, uczestniczyłam w wielu specjalistycznych szkoleniach i ciągle podnoszę swoje kwalifikacje w zakresie prawa imigracyjnego i legalizacji. Moja misja i misja mojego zespołu polega na pomaganiu każdemu klientowi w znalezieniu optymalnej ścieżki do uzyskania zezwoleń na pobyt lub obywatelstwa, zapewniając wsparcie na każdym etapie procesu."
+      "firstImageAlt": "zdjęcie naszego zespołu",
+      "secondImageAlt": "zdjęcie założyciela firmy",
+      "mainTitle": "O nas",
+      "mainDescription": "Nazywam się Yuliia Vasylenko i jestem założycielką firmy LegalFox. Naszą misją jest pomoc cudzoziemcom w skutecznej legalizacji pobytu i znalezieniu zatrudnienia w Polsce, oferując eksperckie wsparcie na każdym etapie tego złożonego procesu.",
+      "firstSubTitle": "Nasze doświadczenie to twoja przewaga",
+      "firstDescription": "Z 8-letnim doświadczeniem w dziedzinie legalizacji oraz ponad 4000 pozytywnymi opiniami, jesteśmy dumni z tego, że pomogliśmy tysiącom osób znaleźć nowy dom w Polsce. Nasz zespół ekspertów zna wszystkie niuanse polskiego prawa i jest gotowy poprowadzić cię przez każdy etap uzyskiwania niezbędnych dokumentów - od tymczasowego pozwolenia na pobyt po obywatelstwo polskie.",
+      "secondSubTitle": "Indywidualne podejście",
+      "secondDescription": "W LegalFox rozumiemy, że każda sprawa jest wyjątkowa. Dlatego oferujemy indywidualne rozwiązania dostosowane do twoich konkretnych okoliczności. Naszym celem nie jest tylko przygotowanie dokumentów, ale znalezienie najbardziej efektywnej drogi do twojej legalizacji w Polsce.",
+      "thirdSubTitle": "Gwarancja jakości",
+      "thirdDescription": "Twoje pozytywne rozstrzygnięcie to nasza odpowiedzialność. Nie tylko obiecujemy wyniki, ale je gwarantujemy. Nasz zespół pracuje z pełnym zaangażowaniem, aby zapewnić pomyślne rozwiązanie twojej sprawy."
     },
     "ContactsSection": {
       "mapLinkText": "Pokaż większą mapę",

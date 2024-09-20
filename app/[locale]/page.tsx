@@ -1,13 +1,13 @@
 import { AccessibilityIcon, ArrowTopRightIcon, BackpackIcon, CodeIcon, LightningBoltIcon, MagicWandIcon, RocketIcon } from "@radix-ui/react-icons"
 import { useTranslations } from 'next-intl'
+import Image from "next/image"
 
 import ContactForm from "@/components/ContactForm"
 import HeroImage from "@/components/HeroImage"
+import Logo from '@/components/Logo'
 import Map from "@/components/Map"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { LOCATION_IN_MAP, COMPANY_NAME_FULL } from '@/constants/setting'
-import { LINK_TO_MAP } from '@/constants/links'
 import {
   Dialog,
   DialogContent,
@@ -16,7 +16,11 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import Logo from '@/components/Logo'
+import { LINK_TO_MAP } from '@/constants/links'
+import { COMPANY_NAME_FULL, LOCATION_IN_MAP } from '@/constants/setting'
+import About from '@/public/img/about.jpg'
+import About2 from '@/public/img/about2.jpg'
+
 
 export default function Home() {
   const tHero = useTranslations('HomePage.HeroSection')
@@ -89,8 +93,8 @@ export default function Home() {
   };
 
   return (
-    <main>
-      {/* Hero Section */}
+    <>
+    {/* Hero Section */}
       <div className="flex flex-col lg:flex-row lg:items-end sm:h-[1100px] h-[900px] container mx-auto">
       <section className="w-full lg:w-2/3 lg:h-2/3 flex-row  mt-12 sm:mt-10">
         <h1 className="text-2xl sm:text-4xl md:text-4xl lg:text-6xl font-semibold mb-4 sm:mb-7 lg:mb-10">{tHero('title')}</h1>
@@ -99,7 +103,8 @@ export default function Home() {
       <DialogTrigger asChild>
       <Button className="text-sm sm:text-xl px-6 py-2 sm:px-10 sm:py-4 mb-10">{tHero('heroButton')}<ArrowTopRightIcon className="ml-1 sm:ml-2 w-6 h-6 sm:w-8 sm:h-8"/></Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px]">
+      {/* заменить на 1/2 */}
+      <DialogContent className="sm:max-w-[425px]"> 
         <DialogHeader>
           <DialogTitle className="text-3xl font-semibold mb-4">{tContacts('titleCard')}</DialogTitle>
           <DialogDescription className="text-lg text-foreground">{tContacts('subTitleCard')}</DialogDescription>
@@ -110,25 +115,23 @@ export default function Home() {
       </section>
         <HeroImage />
       </div>
-
-      {/* Services Section */}
-      {/* <div className="min-h-[1100px] relative bg-slate-200">
-        <section className="text-center pt-12 pb-12">
-          <h2 className="text-5xl font-semibold mb-7">{tServices('title')}</h2>
-          <p className="text-xl mb-14">{tServices('subTitle')}</p>
+    {/* Services Section */}
+      <div className="min-h-[1100px] relative bg-background-secondary">
+        <section className="text-center container mx-auto pt-16 md:pt-20 lg:pt-28 pb-16">
+          <h2 className="text-3xl xl:text-4xl font-semibold mb-8">{tServices('title')}</h2>
+          <p className="xl:text-xl text-lg font-light mb-24">{tServices('subTitle')}</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
             {cards.map((card, index) => {
               const Icon = card.icon;
               return (
-                <Card key={index} className="w-[350px] bg-red-100 text-left mx-auto">
+                <Card key={index} className="w-full text-left mx-auto bg-background">
                   <CardHeader className="flex flex-row items-center">
                     <Icon className="w-24 h-14"/>
                     <div>
                       <CardTitle>{card.heading}</CardTitle>
-                      <CardDescription>{card.subHeading}</CardDescription>
                     </div>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className='text-lg font-light'>
                     {card.content}
                   </CardContent>
                 </Card>
@@ -136,29 +139,57 @@ export default function Home() {
             })}
           </div>
         </section>
-      </div> */}
+      </div>
+      
+{/* About Section */}
+<article className='bg-background flex flex-col'>
+  <div className="flex flex-col-reverse md:flex-row md:items-center md:h-[900px] md:relative container mx-auto mt-16 md:mt-20 lg:mt-28">
+    <section className="md:w-1/2 ">
+      <h2 className="text-3xl xl:text-4xl font-semibold mb-14 pt-12">{tAbout('mainTitle')}</h2>
+      <p className="xl:text-xl text-lg font-light mb-8">{tAbout('mainDescription')}</p>
+      <h2 className="lg:text-2xl text-xl font-semibold mb-8">{tAbout('firstSubTitle')}</h2>
+      <p className="xl:text-xl text-lg font-light md:mb-96 mb-16">{tAbout('firstDescription')}</p>
+    </section>
 
-      {/* About Section */}
-      {/* <div className="flex justify-between items-center h-[1100px] relative bg-background-secondary -z-20">
-        <section className="w-[600px]">
-          <h2 className="text-6xl font-semibold mb-7">{tAbout('title')}</h2>
-          <p className="text-2xl mb-14">{tAbout('subTitle')}</p>
-        </section>
-        <HeroImage />
-      </div> */}
+    <figure className='h-full md:w-1/2 md:relative'>
+      <Image 
+        src={About}
+        alt={tAbout('firstImageAlt')}
+        className="object-contain w-full h-full xl:max-h-[65vh] max-h-[50vh] md:sticky md:top-0"
+        priority
+      />
+    </figure>
+  </div>
+
+  <div className="flex flex-col md:flex-row md:items-center md:h-[900px] md:relative container mx-auto mt-16 md:mt-20 lg:mt-28">
+  <figure className='h-full md:w-1/2 md:relative'>
+      <Image 
+        src={About2}
+        alt={tAbout('secondImageAlt')}
+        className="object-contain w-full h-full xl:max-h-[65vh] max-h-[50vh] md:sticky md:top-0"
+        priority
+      />
+    </figure>
+    <section className="md:w-1/2 mt-16 md:mt-0">
+      <h2 className="lg:text-2xl text-xl font-semibold mb-8">{tAbout('secondSubTitle')}</h2>
+      <p className="xl:text-xl text-lg font-light mb-14">{tAbout('secondDescription')}</p>
+      <h2 className="lg:text-2xl text-xl font-semibold mb-8">{tAbout('thirdSubTitle')}</h2>
+      <p className="xl:text-xl text-lg font-light mb-14">{tAbout('thirdDescription')}</p>
+    </section>
+  </div>
+</article>
+
 {/* Contacts Section */}
-<section className="relative bg-background-secondary py-12">
-  <header className="text-center mb-10">
-    <h1 className="text-4xl font-semibold mb-4">{tContacts('title')}</h1>
-    <p className="text-xl font-light">{tContacts('subTitle')}</p>
+<section className="bg-background-secondary pb-28">
+  <header className="text-center pt-16 md:pt-20 lg:pt-28 ">
+    <h1 className="text-3xl xl:text-4xl font-semibold mb-8">{tContacts('title')}</h1>
+    <p className="xl:text-xl text-lg font-light  mb-24">{tContacts('subTitle')}</p>
   </header>
-
   <div className="container mx-auto flex flex-col lg:flex-row justify-between items-start lg:items-center gap-y-4 lg:gap-x-4">
     <article className="lg:w-1/2 w-full h-full max-h-[55vh]">
       <Card className="text-left mx-auto">
         <CardHeader className="flex flex-col items-center p-6">
-            <CardTitle className="text-3xl font-semibold mb-4">{tContacts('titleCard')}</CardTitle>
-            <CardDescription className="text-lg text-foreground">{tContacts('subTitleCard')}</CardDescription>
+            <CardDescription className="lg:text-2xl text-xl font-semibold text-foreground">{tContacts('subTitleCard')}</CardDescription>
         </CardHeader>
         <CardContent className="mb-10">
           <ContactForm contactTranslations={contactTranslations} />
@@ -177,6 +208,6 @@ export default function Home() {
     </aside>
   </div>
 </section>
-</main>
+</>
   );
 }
