@@ -68,6 +68,7 @@ export default function Home() {
     },
   ];
   const contactTranslations = {
+    privacyError: tContacts('privacyError'),
     nameLabel: tContacts('nameLabel'),
     namePlaceholder: tContacts('namePlaceholder'),
     phoneLabel: tContacts('phoneLabel'),
@@ -78,6 +79,8 @@ export default function Home() {
     successMessage: tContacts('successMessage'),
     errorMessage: tContacts('errorMessage'),
     errorOccurred: tContacts('errorOccurred'),
+    privacyLabel:tContacts('privacyLabel'),
+    privacyPolicy:tContacts('privacyPolicy'),
     ValidationMessages: {
       name: {
         minLength: tContacts('ValidationMessages.name.minLength'),
@@ -188,7 +191,7 @@ export default function Home() {
     <p className="xl:text-xl text-lg font-light  mb-24">{tContacts('subTitle')}</p>
   </header>
   <div className="container mx-auto flex flex-col lg:flex-row justify-between items-start lg:items-center gap-y-4 lg:gap-x-4">
-    <article className="lg:w-1/2 w-full h-full max-h-[55vh]">
+    <article className="lg:w-1/2 w-full h-full">
       <Card className="text-left mx-auto">
         <CardHeader className="flex flex-col items-center p-6">
             <CardDescription className="lg:text-2xl text-xl font-semibold text-foreground">{tContacts('subTitleCard')}</CardDescription>
@@ -198,7 +201,7 @@ export default function Home() {
         </CardContent>
       </Card>
     </article>
-    <aside className="lg:w-1/2 w-full h-full max-h-[55vh] shadow-sm">
+    <aside className="lg:w-1/2 w-full h-full shadow-sm">
       <Map location={LOCATION_IN_MAP}> 
         <div className='text-muted-foreground flex flex-col gap-y-2 text-center items-center'>
           <Logo variant='map' />

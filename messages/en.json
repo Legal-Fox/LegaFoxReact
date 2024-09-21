@@ -89,6 +89,9 @@
       "subTitle": "Get in touch with us via any convenient method",
       "titleCard": "Contact Us",
       "subTitleCard": "Fill out the form and we'll get in touch with you shortly",
+      "privacyLabel": "By submitting your request, you agree to the processing of your personal data. Learn more about GDPR in our",
+      "privacyPolicy": "Privacy Policy",
+      "privacyError": "Your consent to data processing is required.",
       "ValidationMessages": {
         "name": {
           "minLength": "The name must be at least 3 characters long."

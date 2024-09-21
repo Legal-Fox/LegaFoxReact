@@ -89,6 +89,9 @@
       "subTitle": "Skontaktuj się z nami w dogodny sposób",
       "titleCard": "Skontaktuj się z nami",
       "subTitleCard": "Wypełnij formularz, a my skontaktujemy się z Tobą wkrótce",
+      "privacyLabel": "Wysyłając zapytanie, zgadzasz się na przetwarzanie swoich danych osobowych. Dowiedz się więcej o RODO w",
+      "privacyPolicy": "Polityce prywatności",
+      "privacyError": "Wymagana jest Twoja zgoda na przetwarzanie danych.",
       "ValidationMessages": {
         "name": {
           "minLength": "Imię musi zawierać co najmniej 3 znaki."
