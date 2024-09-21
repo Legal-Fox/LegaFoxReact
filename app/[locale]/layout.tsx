@@ -4,7 +4,7 @@ import { getTranslations } from 'next-intl/server'
 import { getMessages } from 'next-intl/server'
 
 import "./globals.css";
-import Header from '@/components/Header'
+import Header from '@/components/NavHeader'
 import Footer from "@/components/Footer"
 import ThemeProvider from '@/providers/ThemeProvider'
 import type { Metadata } from "next"
