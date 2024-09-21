@@ -48,7 +48,7 @@ if (variant === 'dropdown') {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="outline" size="icon">
-          <GlobeIcon className="h-6 w-6" />
+          <GlobeIcon className="h-5 w-5" />
           <span className="sr-only">{changeLanguageLabel}</span>
         </Button>
       </DropdownMenuTrigger>

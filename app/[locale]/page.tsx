@@ -1,4 +1,4 @@
-import { AccessibilityIcon, ArrowTopRightIcon, BackpackIcon, CodeIcon, LightningBoltIcon, MagicWandIcon, RocketIcon } from "@radix-ui/react-icons"
+import { AccessibilityIcon, ArrowTopRightIcon, BackpackIcon, CodeIcon, LightningBoltIcon, MagicWandIcon, RocketIcon, StarFilledIcon } from "@radix-ui/react-icons"
 import { useTranslations } from 'next-intl'
 import Image from "next/image"
 
@@ -18,9 +18,9 @@ import {
 } from "@/components/ui/dialog"
 import { LINK_TO_MAP } from '@/constants/links'
 import { COMPANY_NAME_FULL, LOCATION_IN_MAP } from '@/constants/setting'
-import About from '@/public/img/about.jpg'
-import About2 from '@/public/img/about2.jpg'
-
+import About from '@/public/img/about.webp'
+import About2 from '@/public/img/about2.webp'
+import { CirclePattern } from '@/public/svg/CirclePattern'
 
 export default function Home() {
   const tHero = useTranslations('HomePage.HeroSection')
@@ -96,15 +96,14 @@ export default function Home() {
     <>
     {/* Hero Section */}
       <div className="flex flex-col lg:flex-row lg:items-end sm:h-[1100px] h-[900px] container mx-auto">
-      <section className="w-full lg:w-2/3 lg:h-2/3 flex-row  mt-12 sm:mt-10">
+      <section className="w-full lg:w-1/2 lg:h-2/3 flex-row  mt-12 sm:mt-10">
         <h1 className="text-2xl sm:text-4xl md:text-4xl lg:text-6xl font-semibold mb-4 sm:mb-7 lg:mb-10">{tHero('title')}</h1>
         <p className="pl-1 text-lg font-light sm:text-2xl md:text-lg lg:text-lg mb-6 lg:mb-14">{tHero('subTitle')}</p>
         <Dialog>
       <DialogTrigger asChild>
       <Button className="text-sm sm:text-xl px-6 py-2 sm:px-10 sm:py-4 mb-10">{tHero('heroButton')}<ArrowTopRightIcon className="ml-1 sm:ml-2 w-6 h-6 sm:w-8 sm:h-8"/></Button>
       </DialogTrigger>
-      {/* заменить на 1/2 */}
-      <DialogContent className="sm:max-w-[425px]"> 
+      <DialogContent className="sm:max-w-1/3"> 
         <DialogHeader>
           <DialogTitle className="text-3xl font-semibold mb-4">{tContacts('titleCard')}</DialogTitle>
           <DialogDescription className="text-lg text-foreground">{tContacts('subTitleCard')}</DialogDescription>
@@ -144,6 +143,7 @@ export default function Home() {
 {/* About Section */}
 <article className='bg-background flex flex-col'>
   <div className="flex flex-col-reverse md:flex-row md:items-center md:h-[900px] md:relative container mx-auto mt-16 md:mt-20 lg:mt-28">
+  <CirclePattern className='h-56 w-32 absolute right-[40%] top-[3%] -rotate-12 hidden lg:block' />
     <section className="md:w-1/2 ">
       <h2 className="text-3xl xl:text-4xl font-semibold mb-14 pt-12">{tAbout('mainTitle')}</h2>
       <p className="xl:text-xl text-lg font-light mb-8">{tAbout('mainDescription')}</p>
@@ -162,6 +162,8 @@ export default function Home() {
   </div>
 
   <div className="flex flex-col md:flex-row md:items-center md:h-[900px] md:relative container mx-auto mt-16 md:mt-20 lg:mt-28">
+  <CirclePattern className='h-64 w-32 absolute left-[40%] top-[3%] hidden lg:block' />
+  <StarFilledIcon className="absolute top-2/3 left-[45%] sm:h-6 sm:w-6 h-5 w-5 fill-primary z-30 hidden lg:block" />
   <figure className='h-full md:w-1/2 md:relative'>
       <Image 
         src={About2}

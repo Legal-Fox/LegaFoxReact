@@ -14,7 +14,7 @@ export default function Header() {
     <header className="flex container mx-auto justify-between items-center mt-6 text-foreground-secondary">
       <Logo variant="header"/>
       <MobileMenu
-        className="flex lg:hidden"
+        className="flex md:hidden"
       tModeToggle={{
         lightLabel: tModeToggle('lightLabel'),
         darkLabel: tModeToggle('darkLabel'),
@@ -29,9 +29,9 @@ export default function Header() {
         changeLanguage: tLanguageToggle('changeLanguage'),
         }}
         />
-      <nav className="items-center space-x-4 hidden lg:flex">
+      <nav className="items-center space-x-2 hidden md:flex">
         <NavMenu variant='header' />
-        <div className="flex items-center border-l border-foreground-secondary ml-4 pl-4 space-x-4">
+        <div className="flex items-center border-l border-foreground-secondary pl-4 space-x-2">
           <ModeToggle 
             variant="dropdown"
             lightLabel={tModeToggle('lightLabel')}
