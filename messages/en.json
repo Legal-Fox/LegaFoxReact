@@ -21,6 +21,10 @@
   },
   "HomePage": {
     "HeroSection": {
+      "experience": "Experience",
+      "years": "Years",
+      "rating": "Rating: ",
+      "outOf": "out of 5",
       "title": "Legalization Services in Poland",
       "subTitle": "Professional assistance in obtaining residence permits, permanent residency, and Polish citizenship. Comprehensive legalization services: from obtaining a residence card to starting a business. Individual approach and support at every stage. We work for your peaceful future in Poland.",
       "heroButton": "Submit a request"

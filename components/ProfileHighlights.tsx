@@ -8,9 +8,13 @@ interface ProfileHighlightsProps {
   yearsOfExperience: number
   rating: number
   className?: string
+  tYears: string
+  tExperience: string
+  tRating: string
+  tOutOf: string
 }
 
-export default function ProfileHighlights({ yearsOfExperience, rating, className }: ProfileHighlightsProps) {
+export default function ProfileHighlights({ yearsOfExperience, rating, className, tYears, tExperience, tRating, tOutOf  }: ProfileHighlightsProps) {
   const stars = Array.from({ length: 5 }, (_, index) => (
     <Star
       key={index}
@@ -23,11 +27,11 @@ export default function ProfileHighlights({ yearsOfExperience, rating, className
     <div className={cn(className)}>
     <div className="flex justify-end items-end">
         <aside className="mb-4">
-        <div className="flex justify-end space-x-0.5" aria-label={`Рейтинг: ${rating} из 5`}>
+        <div className="flex justify-end space-x-0.5" aria-label={`${tRating} ${rating} ${tOutOf}`}>
           {stars}
         </div>
-        <p className="sm:text-3xl text-lg text-right font-semibold text-foreground-secondary">{yearsOfExperience} {'Лет'}</p>
-        <p className="sm:text-xl text-xl text-right font-light">Опыта</p>
+        <p className="sm:text-3xl text-lg text-right font-semibold text-foreground-secondary">{yearsOfExperience} {tYears}</p>
+        <p className="sm:text-xl text-xl text-right font-light">{tExperience}</p>
       </aside>
       <SocialLinks variant="sidebar" className="xl:block hidden" />
       </div>
