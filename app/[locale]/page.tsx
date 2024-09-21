@@ -3,10 +3,8 @@ import { useTranslations } from 'next-intl'
 import Image from "next/image"
 
 import ContactForm from "@/components/ContactForm"
-import Logo from '@/components/Logo'
-import Map from "@/components/Map"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import {
   Dialog,
   DialogContent,
@@ -15,22 +13,19 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import { LINK_TO_MAP } from '@/constants/links'
-import { COMPANY_NAME_FULL, LOCATION_IN_MAP } from '@/constants/setting'
 import { CirclePattern } from '@/public/svg/CirclePattern'
 import { BackgroundCircle } from '@/public/svg/BackgroundCircle'
 import ProfileHighlights from "@/components/ProfileHighlights"
 
 import Hero from '@/public/img/hero.webp'
 import About from './about/page'
+import Contacts from './contacts/page'
 
 export default function Home() {
   const tHero = useTranslations('HomePage.HeroSection')
   const tServices = useTranslations('HomePage.ServicesSection')
   const tAbout = useTranslations('HomePage.AboutUsSection')
   const tContacts = useTranslations('HomePage.ContactsSection')
-  const tFooter = useTranslations('HomePage.FooterSection');
-
   const cards = [
     {
       heading: tServices('cards.0.heading'),
@@ -169,34 +164,7 @@ export default function Home() {
 {/* About Section */}
   <About />
 {/* Contacts Section */}
-<section className="bg-background-secondary pb-28">
-  <header className="text-center pt-16 md:pt-20 lg:pt-28 ">
-    <h1 className="text-3xl xl:text-4xl font-semibold mb-8">{tContacts('title')}</h1>
-    <p className="xl:text-xl text-lg font-light  mb-24">{tContacts('subTitle')}</p>
-  </header>
-  <div className="container mx-auto flex flex-col lg:flex-row justify-between items-start lg:items-center gap-y-4 lg:gap-x-4">
-    <article className="lg:w-1/2 w-full h-full">
-      <Card className="text-left mx-auto">
-        <CardHeader className="flex flex-col items-center p-6">
-            <CardDescription className="lg:text-2xl text-xl font-semibold text-foreground">{tContacts('subTitleCard')}</CardDescription>
-        </CardHeader>
-        <CardContent className="mb-10">
-          <ContactForm contactTranslations={contactTranslations} />
-        </CardContent>
-      </Card>
-    </article>
-    <aside className="lg:w-1/2 w-full h-full shadow-sm">
-      <Map location={LOCATION_IN_MAP}> 
-        <div className='text-muted-foreground flex flex-col gap-y-2 text-center items-center'>
-          <Logo variant='map' />
-          <h3>{COMPANY_NAME_FULL}</h3>
-          <p>{`${tFooter('address')}, ${tFooter('city')}, ${tFooter('postalCode')}`}</p>
-          <Button variant='link' className='text-muted-foreground font-light'><a href={LINK_TO_MAP}>{tContacts('mapLinkText')}</a></Button>
-          </div>
-      </Map>
-    </aside>
-  </div>
-</section>
+<Contacts />
 </>
   );
 }
