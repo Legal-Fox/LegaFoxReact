@@ -133,5 +133,23 @@
       "contacts": "Contacts",
       "privacyPolicy": "Privacy Policy"
     }
+  },
+  "PrivacyPolicy": {
+    "title": "Privacy Policy",
+    "subtitle": "PROCESSING OF PERSONAL DATA",
+    "introduction": "This Privacy Policy describes how we collect, use, and disclose your personal information when you use our website.",
+    "administrator": "According to Article 13, Section 1 of the Regulation (EU) 2016/679 of the European Parliament and of the Council of April 27, 2016, on the protection of individuals regarding the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation), hereinafter referred to as GDPR, we inform you that the administrator of your personal data is:",
+    "companyInfo": "Yuliia Vasylenko LegalFox (NIP: 58428117098) – Gdańsk, ul. Jaskowa Dolina 15/113, 80-252.",
+    "dataUsage": "Your personal data, collected in connection with the conclusion of a contract, will be processed for the purpose of fulfilling that contract and providing responses to your letters, inquiries, and complaints.",
+    "dataProvision": "Providing personal data is voluntary but necessary for the conclusion and fulfillment of the contract.",
+    "legalBasis": "The legal basis for processing your data is:",
+    "legalBasis1": "performance of the contract or taking action at your request prior to its conclusion (Article 6, Section 1, point b GDPR),",
+    "legalBasis2": "fulfillment of legal obligations imposed on the administrator (Article 6, Section 1, point c GDPR),",
+    "legalBasis3": "legitimate interests of the administrator (Article 6, Section 1, point f GDPR).",
+    "dataSharing": "Your data may be transferred to entities processing it on our behalf, as well as to government bodies entitled to receive it under applicable law.",
+    "dataRetention": "Your data will be processed for the time necessary to achieve the purposes mentioned in Section 2 and then for the period prescribed by law for protection against possible claims.",
+    "dataRights": "You have the right to access your data, correct it, delete it, transfer it, and object to its processing.",
+    "contactInfo": "For questions regarding the protection of personal data, please contact us by email:",
+    "email": "juliia.redfox@gmail.com"
   }
 }

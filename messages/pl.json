@@ -133,5 +133,23 @@
       "contacts": "Kontakt",
       "privacyPolicy": "Polityka prywatności"
     }
+  },
+  "PrivacyPolicy": {
+    "title": "Polityka Prywatności",
+    "subtitle": "PRZETWARZANIE DANYCH OSOBOWYCH",
+    "introduction": "Niniejsza Polityka Prywatności opisuje, w jaki sposób zbieramy, wykorzystujemy i ujawniamy Twoje dane osobowe podczas korzystania z naszej strony internetowej.",
+    "administrator": "Zgodnie z art. 13 ust. 1 Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych oraz swobodnego przepływu takich danych i uchylenia dyrektywy 95/46/WE (ogólne rozporządzenie o ochronie danych), zwane dalej RODO, informujemy, że administratorem Twoich danych osobowych jest:",
+    "companyInfo": "Yuliia Vasylenko LegalFox (NIP: 58428117098) – Gdańsk, ul. Jaskowa Dolina 15/113, 80-252.",
+    "dataUsage": "Twoje dane osobowe, zebrane w związku z zawarciem umowy, będą przetwarzane w celu realizacji tej umowy oraz udzielania odpowiedzi na Twoje pisma, zapytania i skargi.",
+    "dataProvision": "Podanie danych osobowych jest dobrowolne, ale niezbędne do zawarcia i realizacji umowy.",
+    "legalBasis": "Podstawą prawną przetwarzania Twoich danych jest:",
+    "legalBasis1": "wykonanie umowy lub podjęcie działań na Twoje żądanie przed jej zawarciem (art. 6 ust. 1 lit. b RODO),",
+    "legalBasis2": "wykonanie obowiązków prawnych nałożonych na administratora (art. 6 ust. 1 lit. c RODO),",
+    "legalBasis3": "uzasadnione interesy administratora (art. 6 ust. 1 lit. f RODO).",
+    "dataSharing": "Twoje dane mogą zostać przekazane podmiotom przetwarzającym je na nasze zlecenie, jak również organom państwowym uprawnionym do ich otrzymania zgodnie z obowiązującymi przepisami prawa.",
+    "dataRetention": "Twoje dane będą przetwarzane przez czas niezbędny do osiągnięcia celów wskazanych w pkt 2, a następnie przez okres przewidziany przepisami prawa na ochronę przed ewentualnymi roszczeniami.",
+    "dataRights": "Masz prawo dostępu do swoich danych, ich poprawiania, usunięcia, przeniesienia, a także do sprzeciwu wobec ich przetwarzania.",
+    "contactInfo": "W przypadku pytań dotyczących ochrony danych osobowych prosimy o kontakt mailowy:",
+    "email": "juliia.redfox@gmail.com"
   }
 }
