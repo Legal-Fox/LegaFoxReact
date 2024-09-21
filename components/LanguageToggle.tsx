@@ -1,9 +1,8 @@
 "use client"
 
 import { useTransition } from "react"
-import { useRouter } from 'next/navigation'
+import { useRouter, usePathname } from 'next/navigation'
 import { GlobeIcon } from "@radix-ui/react-icons"
-
 import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
@@ -35,53 +34,65 @@ export default function LanguageToggle({
   changeLanguageLabel
 }: LanguageToggleProps) {
   const router = useRouter()
-  const [isPending, starTransition ] = useTransition()
+  const pathname = usePathname()
+  const [isPending, startTransition] = useTransition()
 
-const changeLanguage = ( newLocale: string) => {
-starTransition (()=> {
-router.replace(`/${newLocale}`)
-})
-}
+  const changeLanguage = (newLocale: string) => {
+    startTransition(() => {
+      const currentPathname = pathname || '/'
+      const segments = currentPathname.split('/')
+      segments[1] = newLocale // Replace the language code
+      const newPath = segments.join('/')
+      router.replace(newPath)
+    })
+  }
 
-if (variant === 'dropdown') {
-  return (
-    <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <Button variant="outline" size="icon">
-          <GlobeIcon className="h-5 w-5" />
-          <span className="sr-only">{changeLanguageLabel}</span>
-        </Button>
-      </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => changeLanguage('en')}>
-          {englishLabel}
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => changeLanguage('pl')}>
-          {polishLabel}
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => changeLanguage('ua')}>
-          {ukrainianLabel}
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => changeLanguage('ru')}>
-          {russianLabel}
-        </DropdownMenuItem>
-      </DropdownMenuContent>
-    </DropdownMenu>
+  const renderLanguageButton = (locale: string, label: string) => (
+    <Button variant="link" onClick={() => changeLanguage(locale)}>
+      <li>{label}</li>
+    </Button>
   )
-}
+
+  if (variant === 'dropdown') {
+    return (
+      <DropdownMenu>
+        <DropdownMenuTrigger asChild>
+          <Button variant="outline" size="icon">
+            <GlobeIcon className="h-5 w-5" />
+            <span className="sr-only">{changeLanguageLabel}</span>
+          </Button>
+        </DropdownMenuTrigger>
+        <DropdownMenuContent align="end">
+          <DropdownMenuItem onClick={() => changeLanguage('en')}>
+            {englishLabel}
+          </DropdownMenuItem>
+          <DropdownMenuItem onClick={() => changeLanguage('pl')}>
+            {polishLabel}
+          </DropdownMenuItem>
+          <DropdownMenuItem onClick={() => changeLanguage('ua')}>
+            {ukrainianLabel}
+          </DropdownMenuItem>
+          <DropdownMenuItem onClick={() => changeLanguage('ru')}>
+            {russianLabel}
+          </DropdownMenuItem>
+        </DropdownMenuContent>
+      </DropdownMenu>
+    )
+  }
+
   if (variant === 'accordion') {
     return (
       <AccordionItem value="language">
-      <AccordionTrigger>{changeLanguageLabel}</AccordionTrigger>
-      <AccordionContent>
-        <ul className="space-y-2 flex flex-col items-start">
-          <Button variant="link"><li onClick={() => changeLanguage('en')}>{englishLabel}</li></Button>
-          <Button variant="link"><li onClick={() => changeLanguage('pl')}>{polishLabel}</li></Button>
-          <Button variant="link"><li onClick={() => changeLanguage('ua')}>{ukrainianLabel}</li></Button>
-          <Button variant="link"><li onClick={() => changeLanguage('ru')}>{russianLabel}</li></Button>
-        </ul>
-      </AccordionContent>
-    </AccordionItem>
+        <AccordionTrigger>{changeLanguageLabel}</AccordionTrigger>
+        <AccordionContent>
+          <ul className="space-y-2 flex flex-col items-start">
+            {renderLanguageButton('en', englishLabel)}
+            {renderLanguageButton('pl', polishLabel)}
+            {renderLanguageButton('ua', ukrainianLabel)}
+            {renderLanguageButton('ru', russianLabel)}
+          </ul>
+        </AccordionContent>
+      </AccordionItem>
     )
   }
 }

@@ -7,7 +7,6 @@ import * as z from 'zod';
 import { useLocale } from 'next-intl';
 import Link from 'next/link';
 
-
 import { Button } from "@/components/ui/button";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
@@ -179,7 +178,7 @@ const ContactForm: React.FC<{ contactTranslations: ContactTranslations }> = ({ c
                   asChild
                   className="pl-1 hover:underline text-lg font-light inline"
                 >
-                <Link href={PRIVACY_POLICY_ROUTE}>{contactTranslations.privacyPolicy}</Link>
+                <Link href={`${locale}/${PRIVACY_POLICY_ROUTE}`}>{contactTranslations.privacyPolicy}</Link>
                 </Button>
                 </FormLabel>
                 </div>
