@@ -125,7 +125,7 @@ export default function Home() {
         tYears={tHero('years')}
         tExperience={tHero('experience')}
         tRating={tHero('rating')}
-        tOutOf={tHero('utOf')}
+        tOutOf={tHero('outOf')}
         />
       <Image 
         src={Hero}
