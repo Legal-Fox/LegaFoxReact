@@ -16,37 +16,37 @@ interface NavLinkProps {
   className?: string;
 }
 
-const NavLink: React.FC<NavLinkProps> = ({ href, label, isActive, className }) => {
+const NavLink: React.FC<NavLinkProps> = React.memo(({ href, label, isActive, className }) => {
   const linkClasses = cn(
-    "transition-colors hover:text-foreground/80",
-    isActive && "text-foreground pointer-events-none font-semibold",
-    !isActive && "text-foreground/60",
+    "transition-colors hover:text-foreground/80 text-lg",
+    isActive ? "text-foreground pointer-events-none" : "text-foreground/60",
     className
   );
 
+  if (isActive) {
+    return <Button variant="link" size='sm' className={linkClasses}>{label}</Button>;
+  }
+
   return (
-    <>
-      {isActive ? (
-        <span className={linkClasses}>{label}</span>
-      ) : (
-        <Button variant="link" className={linkClasses}>
-          <Link href={href} className={linkClasses}>{label}</Link>
-          </Button>
-      )}
-    </>
+    <Button variant="link" size='sm' className={linkClasses}>
+      <Link href={href}>{label}</Link>
+    </Button>
   );
-};
+});
+
+NavLink.displayName = 'NavLink';
+
+type RouteVariant = 'header' | 'footer' | 'default';
 
 interface NavMenuProps {
-  variant: 'header' | 'footer' | 'default';
+  variant: RouteVariant;
   className?: string;
 }
 
 export default function NavMenu({ variant, className }: NavMenuProps) {
   const tNavMenu = useTranslations('Components.Nav');
-  const pathName = usePathname() ?? '';
-  const params = useParams();
-  const locale = params.locale as string;
+  const pathName = usePathname();
+  const { locale } = useParams();
 
   const routes = useMemo(() => [
     { label: tNavMenu('home'), href: HOME_ROUTE },
@@ -59,11 +59,16 @@ export default function NavMenu({ variant, className }: NavMenuProps) {
     variant === 'header' ? routes.slice(0, 3) : routes,
   [variant, routes]);
 
-  const isActive = (href: string) => {
+  const isActive = useMemo(() => {
     const localePrefix = `/${locale}`;
-    const fullPath = localePrefix + href;
-    return pathName === fullPath;
-  };
+    return (href: string) => {
+      const fullPath = localePrefix + href;
+      if (href === HOME_ROUTE) {
+        return pathName === localePrefix || pathName === `${localePrefix}/`;
+      }
+      return pathName?.startsWith(fullPath);
+    };
+  }, [locale, pathName]);
 
   return (
     <nav className={className}>
@@ -73,7 +78,7 @@ export default function NavMenu({ variant, className }: NavMenuProps) {
           href={item.href}
           label={item.label}
           isActive={isActive(item.href)}
-          className={variant === 'footer' ? 'text-lg font-normal text-left' : 'lg:px-2 px-1  text-lg'}
+          className={variant === 'footer' ? 'px-0' : 'lg:px-2 px-1'}
         />
       ))}
     </nav>
