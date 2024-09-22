@@ -20,7 +20,7 @@ export default function About() {
       <h2 className="text-3xl xl:text-4xl font-semibold mb-14 pt-12">{tAbout('mainTitle')}</h2>
       <p className="xl:text-xl text-lg font-light mb-8">{tAbout('mainDescription')}</p>
       <h2 className="lg:text-2xl text-xl font-semibold mb-8">{tAbout('firstSubTitle')}</h2>
-      <p className="xl:text-xl text-lg font-light md:mb-96 mb-16">{tAbout('firstDescription')}</p>
+      <p className="xl:text-xl text-lg font-light md:mb-96 lg:mb-16 mb-8">{tAbout('firstDescription')}</p>
     </section>
 
     <figure className='h-full md:w-1/2 md:relative'>
