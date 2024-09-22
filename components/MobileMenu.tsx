@@ -60,7 +60,7 @@ export default function MobileMenu({
               toggleTheme={tModeToggle.toggleTheme}
             />
           </Accordion>
-          <NavMenu variant='default' className='flex-col'/>
+          <NavMenu variant='default' className='flex flex-col items-start'/>
         </nav>
         <SocialLinks 
           variant="sidebar"  
