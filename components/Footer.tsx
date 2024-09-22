@@ -21,7 +21,7 @@ export default function Footer () {
           {/* Contact Information */}
           <div>
             <h4 className="text-lg font-bold mb-4">{tFooter('contactInfoTitle')}</h4>
-            <ul className="space-y-2 text-lg pl-2">
+            <ul className="space-y-2 text-lg">
               <li>{tFooter('nip')}</li>
               <li>{tFooter('email')}</li>
               <li>{tFooter('city')}</li>
@@ -33,13 +33,13 @@ export default function Footer () {
           {/* Navigation Links */}
           <div className="flex flex-col text-start">
           <h4 className="text-lg font-bold ">{tFooter('linksTitle')}</h4>
-          <NavMenu variant="footer" className="flex flex-col"/>
+          <NavMenu variant="footer" className="flex flex-col items-start"/>
           </div>
 
           {/* Social Media */}
           <div>
             <h4 className="text-lg font-bold mb-4 ">{tFooter('socialMediaTitle')}</h4>
-            <SocialLinks variant="footer" className='pl-4'/>
+            <SocialLinks variant="footer"/>
           </div>
           </div>
         {/* Copyright */}
