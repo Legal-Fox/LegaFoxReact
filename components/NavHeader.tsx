@@ -11,7 +11,7 @@ export default function Header() {
   const tLanguageToggle = useTranslations('Header.LanguageToggle')
 
   return (
-    <header className="flex container mx-auto justify-between items-center mt-6 text-foreground-secondary">
+    <header className="flex container mx-auto justify-between items-center my-6 text-foreground-secondary">
       <Logo variant="header"/>
       <MobileMenu
         className="flex md:hidden"

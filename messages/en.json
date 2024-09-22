@@ -17,8 +17,14 @@
       "polski": "Polski",
       "ukrainian": "Ukrainian",
       "russian": "Russian"
-    }
-  },
+    },
+  "Nav": {
+    "home": "Home",
+    "about": "About",
+    "contacts": "Contacts",
+    "privacyPolicy": "Privacy Policy"
+  }
+},
   "HomePage": {
     "HeroSection": {
       "experience": "Experience",

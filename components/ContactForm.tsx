@@ -178,7 +178,7 @@ const ContactForm: React.FC<{ contactTranslations: ContactTranslations }> = ({ c
                   asChild
                   className="pl-1 hover:underline text-lg font-light inline"
                 >
-                <Link href={`${locale}/${PRIVACY_POLICY_ROUTE}`}>{contactTranslations.privacyPolicy}</Link>
+                <Link href={PRIVACY_POLICY_ROUTE}>{contactTranslations.privacyPolicy}</Link>
                 </Button>
                 </FormLabel>
                 </div>

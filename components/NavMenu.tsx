@@ -4,8 +4,6 @@ import React, { useMemo } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl'
-import { useLocale } from 'next-intl';
-
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -48,7 +46,6 @@ interface NavMenuProps {
 }
 
 export default function NavMenu({ variant, className }: NavMenuProps) {
-  const locale = useLocale()
   const tNavMenu = useTranslations('Components.Nav');
   const pathName = usePathname() ?? '';
 
@@ -69,7 +66,7 @@ export default function NavMenu({ variant, className }: NavMenuProps) {
         {filteredRoutes.map((item) => (
           <li key={item.href}>
             <NavLink
-              href={`${locale}/${item.href}`}
+              href={item.href}
               label={item.label}
               isActive={pathName.startsWith(item.href)}
               className={variant === 'footer' ? 'text-lg font-normal' : 'text-lg'}

@@ -17,6 +17,12 @@
       "polski": "Polski",
       "ukrainian": "Ukraiński",
       "russian": "Rosyjski"
+    },
+    "Nav": {
+      "home": "Strona główna",
+      "about": "O nas",
+      "contacts": "Kontakt",
+      "privacyPolicy": "Polityka prywatności"
     }
   },
   "HomePage": {
