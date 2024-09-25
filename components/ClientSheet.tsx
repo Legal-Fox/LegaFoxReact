@@ -23,7 +23,7 @@ export default function ClientSheet({ children, className, title, nameBtn }: Cli
 
   useEffect(() => {
     if (open) setOpen(false);
-  }, [pathName]);
+  }, [pathName, open]);
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
