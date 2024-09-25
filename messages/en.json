@@ -38,35 +38,35 @@
       "subTitle": "We help clients obtain all types of residence permits, permanent residency, and citizenship, and also provide individual consultations.",
       "cards": [
         {
-          "heading": "Temporary Residence Permit",
-          "subHeading": "Pobyt Czasowy",
-          "content": "Residence card valid for up to 3 years. This type of permit can be obtained on various grounds, such as work, study, business, family reunification, cohabitation, marriage with a Polish citizen, etc."
+          "heading": "Residence Card",
+          "subHeading": "Karta Pobytu",
+          "content": "Full management of cases for all types of residence cards: temporary residence (Czasowy), permanent residence (Stały), EU Blue Card, EU long-term resident card. Grounds: employment, study, family reunification, marriage to a Polish citizen, business, and others."
         },
         {
-          "heading": "Permanent Residence Permit",
-          "subHeading": "Pobyt Stały",
-          "content": "A permanent residence card with an indefinite decision and a card valid for 10 or 5 years. This type of permit can be obtained on grounds such as Polish Card, Polish roots, continuous stay of more than 5 years in Poland, etc."
+          "heading": "Business Setup and Management",
+          "subHeading": "Starting and Running a Business",
+          "content": "Assistance in starting a business (JDG, Sp. z o.o.), consultations on legalization through business, and managing entrepreneurial activities in Poland. Full support at all stages."
         },
         {
           "heading": "Polish Citizenship",
-          "subHeading": "Obywatelstwo",
-          "content": "You can obtain a Polish passport if you have a permanent residence permit or have lived in Poland for more than 10 years. The citizenship process is explained in detail during the consultation."
+          "subHeading": "Polish Citizenship",
+          "content": "Assistance in obtaining Polish citizenship. We will guide you through every stage of the process, providing the most effective path to acquiring citizenship."
+        },        
+        {
+          "heading": "Marriage and Family Issues",
+          "subHeading": "Marriage and family matters",
+          "content": "Assistance with marriage formalities in Poland, legalization based on marriage or cohabitation with a Polish citizen. Support in family reunification."
         },
         {
-          "heading": "Polish Card",
-          "subHeading": "Karta Polaka",
-          "content": "The Polish Card can be obtained by people of Polish origin who can prove their Polish roots and knowledge of the Polish language. It is also available for foreigners who support Polish culture and identity."
-        },
-        {
-          "heading": "Appeal",
-          "subHeading": "Odwołanie",
-          "content": "An appeal can be filed in case of refusal or if the foreigner disagrees with the decision. We analyze the case individually and prepare all necessary documents to change the decision."
+          "heading": "Documents and Registrations",
+          "subHeading": "Documents and registrations",
+          "content": "Assistance with the preparation of various documents: PIT-37 tax return, vehicle registration, driver's license replacement. Support in obtaining 800+ or RKO 1000+ benefits."
         },
         {
           "heading": "Consultation",
           "subHeading": "Konsultacja",
-          "content": "We offer individual consultations to discuss all issues related to legalization and immigration. We thoroughly examine your situation and offer the best solutions."
-        }
+          "content": "We offer individual consultations to discuss all issues related to legalization and immigration. We carefully study your situation and offer the best solutions."
+        }        
       ]
     },
     "AboutUsSection": {
@@ -118,7 +118,7 @@
       "slogan": "An expert in the field of legalization and employment of foreigners.",
       "contactInfoTitle": "Contact Information",
       "nip": "NIP: 5842817098",
-      "email": "juliia.redfox@gmail.com",
+      "email": "legalfox.gdansk@gmail.com",
       "city": "Gdańsk",
       "address": "Jaskowa Dolina St. 15/113",
       "postalCode": "80-252",

@@ -38,34 +38,34 @@
       "subTitle": "Pomagamy klientom w uzyskaniu wszelkiego rodzaju zezwoleń na pobyt, pobytu stałego oraz obywatelstwa, a także oferujemy indywidualne konsultacje.",
       "cards": [
         {
-          "heading": "Tymczasowe zezwolenie na pobyt",
-          "subHeading": "Pobyt Czasowy",
-          "content": "Karta pobytu ważna do 3 lat. Ten typ zezwolenia można uzyskać na podstawie pracy, studiów, działalności gospodarczej, łączenia rodzin, konkubinatu, małżeństwa z obywatelem RP itp."
+          "heading": "Karta Pobytu",
+          "subHeading": "Karta Pobytu",
+          "content": "Pełne prowadzenie spraw dotyczących wszystkich typów kart pobytu: czasowego (Czasowy), stałego (Stały), Niebieska Karta UE, karta rezydenta długoterminowego UE. Podstawy: praca, studia, łączenie rodzin, małżeństwo z obywatelem Polski, działalność gospodarcza i inne."
         },
         {
-          "heading": "Stałe zezwolenie na pobyt",
-          "subHeading": "Pobyt Stały",
-          "content": "Karta pobytu z decyzją na czas nieokreślony oraz plastikowa karta ważna na 10 lub 5 lat. Ten typ zezwolenia można uzyskać na podstawie Karty Polaka, polskich korzeni, ciągłego pobytu dłuższego niż 5 lat w Polsce itp."
+          "heading": "Założenie i Prowadzenie Firmy",
+          "subHeading": "Założenie i prowadzenie firmy",
+          "content": "Pomoc w założeniu firmy (JDG, Sp. z o.o.), konsultacje dotyczące legalizacji poprzez biznes oraz prowadzenia działalności gospodarczej w Polsce. Pełne wsparcie na wszystkich etapach."
         },
         {
-          "heading": "Obywatelstwo polskie",
-          "subHeading": "Obywatelstwo",
-          "content": "Możesz uzyskać polski paszport, jeśli masz pobyt stały lub mieszkasz w Polsce dłużej niż 10 lat. Proces uzyskania obywatelstwa jest szczegółowo omawiany podczas konsultacji."
+          "heading": "Obywatelstwo Polskie",
+          "subHeading": "Obywatelstwo polskie",
+          "content": "Pomoc w uzyskaniu obywatelstwa polskiego. Przeprowadzimy Cię przez wszystkie etapy procesu, zapewniając najskuteczniejszą drogę do uzyskania obywatelstwa."
+        },        
+        {
+          "heading": "Małżeństwo i Sprawy Rodzinne",
+          "subHeading": "Małżeństwo i sprawy rodzinne",
+          "content": "Pomoc w załatwianiu formalności małżeńskich na terenie Polski, legalizacja na podstawie małżeństwa lub konkubinatu z obywatelem Polski. Wsparcie w sprawach związanych z łączeniem rodzin."
         },
         {
-          "heading": "Karta Polaka",
-          "subHeading": "Karta Polaka",
-          "content": "Kartę Polaka mogą uzyskać osoby polskiego pochodzenia, które udowodnią swoje polskie korzenie i znajomość języka polskiego. Jest ona również dostępna dla cudzoziemców wspierających kulturę i tożsamość polską."
-        },
-        {
-          "heading": "Odwołanie",
-          "subHeading": "Odwołanie",
-          "content": "Odwołanie można złożyć w przypadku odmowy lub niezgody cudzoziemca z decyzją. Indywidualnie analizujemy przypadek i przygotowujemy wszystkie niezbędne dokumenty do zmiany decyzji."
+          "heading": "Dokumenty i Rejestracje",
+          "subHeading": "Dokumenty i rejestracje",
+          "content": "Pomoc w przygotowaniu różnych dokumentów: deklaracja PIT-37, rejestracja pojazdu, wymiana prawa jazdy. Wsparcie w uzyskaniu świadczeń 800+ lub RKO 1000+."
         },
         {
           "heading": "Konsultacja",
           "subHeading": "Konsultacja",
-          "content": "Oferujemy indywidualne konsultacje, aby omówić wszystkie kwestie związane z legalizacją i imigracją. Dokładnie analizujemy Twoją sytuację i proponujemy najlepsze rozwiązania."
+          "content": "Oferujemy indywidualne konsultacje w celu omówienia wszystkich kwestii związanych z legalizacją i imigracją. Dokładnie analizujemy Twoją sytuację i proponujemy najlepsze rozwiązania."
         }
       ]
     },
@@ -118,7 +118,7 @@
       "slogan": "Ekspert w dziedzinie legalizacji i zatrudnienia cudzoziemców.",
       "contactInfoTitle": "Informacje kontaktowe",
       "nip": "NIP: 5842817098",
-      "email": "juliia.redfox@gmail.com",
+      "email": "legalfox.gdansk@gmail.com",
       "city": "Gdańsk",
       "address": "ul. Jaskowa Dolina 15/113",
       "postalCode": "80-252",
