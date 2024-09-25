@@ -5,6 +5,10 @@
     "keywords": "Legalizacja w Polsce, Karta Pobytu, Blue Card, Pobyt stały, Karta rezydenta UE, rejestracja firmy w Polsce, obywatelstwo polskie, dokumenty w Polsce, pomoc cudzoziemcom, LegalFox"
   },
   "Header": {
+    "MobileMenu": {
+      "MobileMenu": "Menu mobilne",
+      "ToggleMenu": "Przełącz menu"
+    },
     "ModeToggle": {
       "lightLabel": "Jasny",
       "darkLabel": "Ciemny",
@@ -17,12 +21,6 @@
       "polski": "Polski",
       "ukrainian": "Ukraiński",
       "russian": "Rosyjski"
-    },
-    "Nav": {
-      "home": "Strona główna",
-      "about": "O nas",
-      "contacts": "Kontakt",
-      "privacyPolicy": "Polityka prywatności"
     }
   },
   "HomePage": {

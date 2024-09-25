@@ -5,6 +5,10 @@
       "keywords": "Legalization in Poland, Residence Permit, Blue Card, Permanent Residence, EU Resident Card, company registration in Poland, Polish citizenship, documents in Poland, assistance to foreigners, LegalFox"
     },
   "Header": {
+    "MobileMenu": {
+      "MobileMenu": "Mobile menu",
+      "ToggleMenu" : "Toggle menu"
+    },
     "ModeToggle": {
       "lightLabel": "Light",
       "darkLabel": "Dark",
@@ -17,13 +21,7 @@
       "polski": "Polski",
       "ukrainian": "Ukrainian",
       "russian": "Russian"
-    },
-  "Nav": {
-    "home": "Home",
-    "about": "About",
-    "contacts": "Contacts",
-    "privacyPolicy": "Privacy Policy"
-  }
+    }
 },
   "HomePage": {
     "HeroSection": {
