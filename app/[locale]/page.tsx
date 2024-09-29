@@ -3,6 +3,10 @@ import { useTranslations } from 'next-intl'
 import Image from "next/image"
 
 import ContactForm from "@/components/ContactForm"
+import ProfileHighlights from "@/components/ProfileHighlights"
+import { InView } from '@/components/core/InView'
+import { AnimatedGroup } from '@/components/core/AnimatedGroup'
+import { TextEffect } from '@/components/core/TextEffect'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import {
@@ -13,13 +17,15 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import { CirclePattern } from '@/public/svg/CirclePattern'
+import LenisProvider from '@/providers/LenisProvider'
 import { BackgroundCircle } from '@/public/svg/BackgroundCircle'
-import ProfileHighlights from "@/components/ProfileHighlights"
+import { CirclePattern } from '@/public/svg/CirclePattern'
+
 
 import Hero from '@/public/img/hero.webp'
 import About from './about/page'
 import Contacts from './contacts/page'
+
 
 export default function Home() {
   const tHero = useTranslations('HomePage.HeroSection')
@@ -93,12 +99,16 @@ export default function Home() {
   };
 
   return (
-    <>
+    <LenisProvider>
     {/* Hero Section */}
       <div className="flex flex-col lg:flex-row lg:items-end sm:h-[1100px] h-[900px] container mx-auto">
       <section className="w-full lg:w-1/2 lg:h-2/3 flex-row  mt-12 sm:mt-10">
-        <h1 className="text-2xl sm:text-4xl md:text-4xl lg:text-6xl font-semibold mb-4 sm:mb-7 lg:mb-10">{tHero('title')}</h1>
-        <p className="pl-1 text-lg font-light sm:text-2xl md:text-lg lg:text-lg mb-6 lg:mb-14">{tHero('subTitle')}</p>
+      <TextEffect className="text-2xl sm:text-4xl md:text-4xl lg:text-6xl font-semibold mb-4 sm:mb-7 lg:mb-10" as='h1' preset='fade'>
+        {tHero('title')}
+        </TextEffect>
+        <TextEffect className="pl-1 text-lg font-light sm:text-2xl md:text-lg lg:text-lg mb-6 lg:mb-14" per='word' as='p' preset='blur'>
+        {tHero('subTitle')}
+        </TextEffect>
         <Dialog>
       <DialogTrigger asChild>
       <Button className="text-sm sm:text-xl px-6 py-2 sm:px-10 sm:py-4 mb-10">{tHero('heroButton')}<ArrowTopRightIcon className="ml-1 sm:ml-2 w-6 h-6 sm:w-8 sm:h-8"/></Button>
@@ -140,7 +150,25 @@ export default function Home() {
         <section className="text-center container mx-auto pt-16 md:pt-20 lg:pt-28 pb-16">
           <h2 className="text-3xl xl:text-4xl font-semibold mb-8">{tServices('title')}</h2>
           <p className="xl:text-xl text-lg font-light mb-24">{tServices('subTitle')}</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+          <InView
+                viewOptions={{ once: true, margin: '0px 0px -250px 0px' }}
+                variants={{
+                  hidden: {
+                    opacity: 0,
+                  },
+                  visible: {
+                    opacity: 1,
+                    transition: {
+                      staggerChildren: 0.09,
+                    },
+                  },
+                }}
+              >
+          {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4"> */}
+          <AnimatedGroup
+      className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4'
+      preset='scale'
+    >
             {cards.map((card, index) => {
               const Icon = card.icon;
               return (
@@ -157,7 +185,8 @@ export default function Home() {
                 </Card>
               );
             })}
-          </div>
+              </AnimatedGroup>
+          </InView>
         </section>
       </div>
 
@@ -165,6 +194,6 @@ export default function Home() {
   <About />
 {/* Contacts Section */}
 <Contacts />
-</>
+</LenisProvider>
   );
 }

@@ -6,8 +6,10 @@ import Map from "@/components/Map"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader } from "@/components/ui/card"
 
+import { InView } from '@/components/core/InView'
 import { LINK_TO_MAP } from '@/constants/links'
 import { COMPANY_NAME_FULL, LOCATION_IN_MAP } from '@/constants/setting'
+
 
 export default function Contacts() {
   const tContacts = useTranslations('HomePage.ContactsSection')
@@ -44,6 +46,24 @@ export default function Contacts() {
   return (
     <>
 {/* Contacts Section */}
+<InView
+          variants={{
+            hidden: {
+              opacity: 0,
+              y: 30,
+              scale: 0.95,
+              filter: 'blur(4px)',
+            },
+            visible: {
+              opacity: 1,
+              y: 0,
+              scale: 1,
+              filter: 'blur(0px)',
+            },
+          }}
+          transition={{ duration: 0.3, ease: 'easeInOut' }}
+          viewOptions={{ margin: '0px 0px -350px 0px' }}
+        >
 <section className="bg-background-secondary pb-28">
   <header className="text-center pt-16 md:pt-20 lg:pt-28 ">
     <h1 className="text-3xl xl:text-4xl font-semibold mb-8">{tContacts('title')}</h1>
@@ -72,6 +92,7 @@ export default function Contacts() {
     </aside>
   </div>
 </section>
+</InView>
 </>
   );
 }
