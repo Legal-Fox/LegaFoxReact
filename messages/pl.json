@@ -139,7 +139,8 @@
       "home": "Strona główna",
       "about": "O nas",
       "contacts": "Kontakt",
-      "privacyPolicy": "Polityka prywatności"
+      "privacyPolicy": "Polityka prywatności",
+      "backToHome": "Powrót do strony głównej"
     }
   },
   "PrivacyPolicy": {

@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { useTranslations } from 'next-intl'
+
 import { cn } from "@/lib/utils";
 import { HOME_ROUTE } from "@/constants/routes";
 import { COMPANY_NAME } from "@/constants/setting";
@@ -10,6 +12,7 @@ interface LogoProps {
 }
 
 export default function Logo({ variant, className }: LogoProps) {
+  const t = useTranslations('Components.Nav')
   const baseClasses = "flex items-center gap-x-2";
 
   const variantClasses = {
@@ -18,10 +21,11 @@ export default function Logo({ variant, className }: LogoProps) {
     dialog: cn(baseClasses, className),
   };
 
-  // Рендер для варианта header
   if (variant === "header") {
     return (
-      <Link className={variantClasses[variant]} href={HOME_ROUTE}>
+      <Link 
+      className={variantClasses[variant]} href={HOME_ROUTE} 
+      aria-label={t('backToHome')}>
         <LogoSvg className="w-10 h-10 fill-primary" />
         <div className="flex gap-x-1 text-2xl">
           <h3>{COMPANY_NAME.first}</h3>
@@ -33,16 +37,18 @@ export default function Logo({ variant, className }: LogoProps) {
     );
   }
 
-  // Рендер для варианта footer
   if (variant === "footer") {
     return (
-      <Link className={variantClasses[variant]} href={HOME_ROUTE}>
+      <Link 
+      className={variantClasses[variant]} 
+      href={HOME_ROUTE}
+      aria-label={t('backToHome')}
+      >
         <LogoSvg className="w-32 h-32 fill-primary" />
       </Link>
     );
   }
 
-  // Рендер для варианта dialog
   if (variant === "dialog") {
     return (
       <div className={variantClasses[variant]}>
@@ -51,8 +57,7 @@ export default function Logo({ variant, className }: LogoProps) {
     );
   }
 
-    // Рендер для варианта footer
-    if (variant === "map") return <LogoSvg className="w-24 h-24 fill-m" />
+  if (variant === "map") return <LogoSvg className="w-24 h-24 fill-m" />
 
   return null;
 }

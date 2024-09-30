@@ -139,7 +139,8 @@
       "home": "Home",
       "about": "About",
       "contacts": "Contacts",
-      "privacyPolicy": "Privacy Policy"
+      "privacyPolicy": "Privacy Policy",
+      "backToHome": "Return to the main page"
     }
   },
   "PrivacyPolicy": {
