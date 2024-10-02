@@ -14,7 +14,7 @@ export default function Header() {
     <header className="flex container mx-auto justify-between items-center my-6 text-foreground-secondary">
       <Logo variant="header"/>
       <MobileMenu
-        className="flex md:hidden"
+      className="flex md:hidden"
       tModeToggle={{
         lightLabel: tModeToggle('lightLabel'),
         darkLabel: tModeToggle('darkLabel'),

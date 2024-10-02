@@ -84,6 +84,7 @@ export default function Home() {
     errorOccurred: tContacts('errorOccurred'),
     privacyLabel:tContacts('privacyLabel'),
     privacyPolicy:tContacts('privacyPolicy'),
+    labelPrivacyPolicy:tContacts('labelPrivacyPolicy'),
     ValidationMessages: {
       name: {
         minLength: tContacts('ValidationMessages.name.minLength'),

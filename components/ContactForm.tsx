@@ -16,6 +16,7 @@ import { PRIVACY_POLICY_ROUTE } from "@/constants/routes"
 
 // Define the shape of the contactTranslations prop
 interface ContactTranslations {
+  labelPrivacyPolicy: string;
   privacyLabel: string;
   privacyError: string;
   privacyPolicy:string;
@@ -177,6 +178,7 @@ const ContactForm: React.FC<{ contactTranslations: ContactTranslations }> = ({ c
                   variant="link"
                   asChild
                   className="pl-1 hover:underline text-lg font-light inline"
+                  aria-label={contactTranslations.labelPrivacyPolicy}
                 >
                 <Link href={PRIVACY_POLICY_ROUTE}>{contactTranslations.privacyPolicy}</Link>
                 </Button>

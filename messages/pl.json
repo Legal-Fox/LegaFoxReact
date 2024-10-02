@@ -100,6 +100,7 @@
       "privacyLabel": "Wysyłając zapytanie, zgadzasz się na przetwarzanie swoich danych osobowych. Dowiedz się więcej o RODO w",
       "privacyPolicy": "Polityce prywatności",
       "privacyError": "Wymagana jest Twoja zgoda na przetwarzanie danych.",
+      "labelPrivacyPolicy": "Zgadzam się z polityką prywatności",
       "ValidationMessages": {
         "name": {
           "minLength": "Imię musi zawierać co najmniej 3 znaki."
