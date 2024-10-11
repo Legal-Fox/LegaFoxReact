@@ -1,14 +1,11 @@
-import { AccessibilityIcon, ArrowTopRightIcon, BackpackIcon, CodeIcon, LightningBoltIcon, MagicWandIcon, RocketIcon, StarFilledIcon } from "@radix-ui/react-icons"
+import { ArrowTopRightIcon, StarIcon } from "@radix-ui/react-icons"
 import { useTranslations } from 'next-intl'
 import Image from "next/image"
 
 import ContactForm from "@/components/ContactForm"
 import ProfileHighlights from "@/components/ProfileHighlights"
-import { InView } from '@/components/core/InView'
-import { AnimatedGroup } from '@/components/core/AnimatedGroup'
 import { TextEffect } from '@/components/core/TextEffect'
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import {
   Dialog,
   DialogContent,
@@ -25,51 +22,13 @@ import { CirclePattern } from '@/public/svg/CirclePattern'
 import Hero from '@/public/img/hero.webp'
 import About from './about/page'
 import Contacts from './contacts/page'
+import Services from './services/page'
 
 
 export default function Home() {
   const tHero = useTranslations('HomePage.HeroSection')
-  const tServices = useTranslations('HomePage.ServicesSection')
   const tAbout = useTranslations('HomePage.AboutUsSection')
   const tContacts = useTranslations('HomePage.ContactsSection')
-  const cards = [
-    {
-      heading: tServices('cards.0.heading'),
-      subHeading: tServices('cards.0.subHeading'),
-      content: tServices('cards.0.content'),
-      icon: AccessibilityIcon,
-    },
-    {
-      heading: tServices('cards.1.heading'),
-      subHeading: tServices('cards.1.subHeading'),
-      content: tServices('cards.1.content'),
-      icon: RocketIcon,
-    },
-    {
-      heading: tServices('cards.2.heading'),
-      subHeading: tServices('cards.2.subHeading'),
-      content: tServices('cards.2.content'),
-      icon: MagicWandIcon,
-    },
-    {
-      heading: tServices('cards.3.heading'),
-      subHeading: tServices('cards.3.subHeading'),
-      content: tServices('cards.3.content'),
-      icon: BackpackIcon,
-    },
-    {
-      heading: tServices('cards.4.heading'),
-      subHeading: tServices('cards.4.subHeading'),
-      content: tServices('cards.4.content'),
-      icon: CodeIcon,
-    },
-    {
-      heading: tServices('cards.5.heading'),
-      subHeading: tServices('cards.5.subHeading'),
-      content: tServices('cards.5.content'),
-      icon: LightningBoltIcon,
-    },
-  ];
   const contactTranslations = {
     privacyError: tContacts('privacyError'),
     nameLabel: tContacts('nameLabel'),
@@ -98,7 +57,6 @@ export default function Home() {
       }
     },
   };
-
   return (
     <LenisProvider>
     {/* Hero Section */}
@@ -124,9 +82,9 @@ export default function Home() {
     </Dialog>
       </section>
         {/* <HeroImage /> */}
-        <div className="relative overflow-hidden xl:pr-20">
-      <StarFilledIcon className="absolute top-[24%] left-[6%] sm:h-6 sm:w-6 h-5 w-5 fill-primary" />
-      <StarFilledIcon className="absolute right-[5%] sm:bottom-50 bottom-[6%] sm:h-6 sm:w-24 h-5 w-5 fill-primary" />
+      <div className="relative overflow-hidden xl:pr-20">
+      <StarIcon className="absolute top-[24%] left-[6%] sm:h-6 sm:w-6 h-5 w-5 fill-primary" />
+      <StarIcon className="absolute right-[5%] sm:bottom-50 bottom-[6%] sm:h-6 sm:w-24 h-5 w-5 " />
       <CirclePattern className='h-44 w-32 absolute left-[10%] bottom-[3%] -z-10' />
       <BackgroundCircle className='absolute -bottom-1/4 w-full h-full -z-20 fill-popover' />
       <ProfileHighlights 
@@ -145,52 +103,9 @@ export default function Home() {
         priority
       />
     </div>
-      </div>
-    {/* Services Section */}
-      <div className="min-h-[1100px] relative bg-background-secondary">
-        <section className="text-center container mx-auto pt-16 md:pt-20 lg:pt-28 pb-16">
-          <h2 className="text-3xl xl:text-4xl font-semibold mb-8">{tServices('title')}</h2>
-          <p className="xl:text-xl text-lg font-light mb-24">{tServices('subTitle')}</p>
-          <InView
-                viewOptions={{ once: true, margin: '0px 0px -250px 0px' }}
-                variants={{
-                  hidden: {
-                    opacity: 0,
-                  },
-                  visible: {
-                    opacity: 1,
-                    transition: {
-                      staggerChildren: 0.09,
-                    },
-                  },
-                }}
-              >
-          {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4"> */}
-          <AnimatedGroup
-      className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4'
-      preset='scale'
-    >
-            {cards.map((card, index) => {
-              const Icon = card.icon;
-              return (
-                <Card key={index} className="w-full text-left mx-auto bg-background">
-                  <CardHeader className="flex flex-row items-center">
-                    <Icon className="w-24 h-14"/>
-                    <div>
-                      <CardTitle>{card.heading}</CardTitle>
-                    </div>
-                  </CardHeader>
-                  <CardContent className='text-lg font-light'>
-                    {card.content}
-                  </CardContent>
-                </Card>
-              );
-            })}
-              </AnimatedGroup>
-          </InView>
-        </section>
-      </div>
-
+    </div>
+{/* Services Section */}
+<Services />
 {/* About Section */}
   <About />
 {/* Contacts Section */}

@@ -27,8 +27,9 @@ export default function Contacts() {
     successMessage: tContacts('successMessage'),
     errorMessage: tContacts('errorMessage'),
     errorOccurred: tContacts('errorOccurred'),
-    privacyLabel:tContacts('privacyLabel'),
-    privacyPolicy:tContacts('privacyPolicy'),
+    privacyLabel: tContacts('privacyLabel'),
+    privacyPolicy: tContacts('privacyPolicy'),
+    labelPrivacyPolicy: tContacts('labelPrivacyPolicy'),
     ValidationMessages: {
       name: {
         minLength: tContacts('ValidationMessages.name.minLength'),
@@ -41,11 +42,9 @@ export default function Contacts() {
         minLength: tContacts('ValidationMessages.message.minLength'),
       }
     },
-  };
+  }
 
   return (
-    <>
-{/* Contacts Section */}
 <InView
           variants={{
             hidden: {
@@ -93,6 +92,5 @@ export default function Contacts() {
   </div>
 </section>
 </InView>
-</>
   );
 }

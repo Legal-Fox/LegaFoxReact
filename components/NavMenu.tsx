@@ -7,7 +7,7 @@ import { useTranslations } from 'next-intl'
 import { Link } from '@/lib/routing'
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { HOME_ROUTE, ABOUT_ROUTE, CONTACTS_ROUTE, PRIVACY_POLICY_ROUTE } from '@/constants/routes';
+import { HOME_ROUTE, ABOUT_ROUTE, CONTACTS_ROUTE, PRIVACY_POLICY_ROUTE, SERVICES } from '@/constants/routes';
 
 interface NavLinkProps {
   href: string;
@@ -52,11 +52,12 @@ export default function NavMenu({ variant, className }: NavMenuProps) {
     { label: tNavMenu('home'), href: HOME_ROUTE },
     { label: tNavMenu('about'), href: ABOUT_ROUTE },
     { label: tNavMenu('contacts'), href: CONTACTS_ROUTE },
+    { label: tNavMenu('services'), href: SERVICES },
     { label: tNavMenu('privacyPolicy'), href: PRIVACY_POLICY_ROUTE },
   ], [tNavMenu]);
 
   const filteredRoutes = useMemo(() => 
-    variant === 'header' ? routes.slice(0, 3) : routes,
+    variant === 'header' ? routes.slice(0, 4) : routes,
   [variant, routes]);
 
   const isActive = useMemo(() => {
