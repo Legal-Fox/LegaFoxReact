@@ -50,9 +50,9 @@ export default function NavMenu({ variant, className }: NavMenuProps) {
 
   const routes = useMemo(() => [
     { label: tNavMenu('home'), href: HOME_ROUTE },
+    { label: tNavMenu('services'), href: SERVICES },
     { label: tNavMenu('about'), href: ABOUT_ROUTE },
     { label: tNavMenu('contacts'), href: CONTACTS_ROUTE },
-    { label: tNavMenu('services'), href: SERVICES },
     { label: tNavMenu('privacyPolicy'), href: PRIVACY_POLICY_ROUTE },
   ], [tNavMenu]);
 
