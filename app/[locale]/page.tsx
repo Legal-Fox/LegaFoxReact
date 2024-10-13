@@ -2,6 +2,8 @@ import { ArrowTopRightIcon, StarIcon } from "@radix-ui/react-icons"
 import { useTranslations } from 'next-intl'
 import Image from "next/image"
 
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import GoogleLogo from '@/public/svg/GoogleLogo'
 import ContactForm from "@/components/ContactForm"
 import ProfileHighlights from "@/components/ProfileHighlights"
 import { TextEffect } from '@/components/core/TextEffect'
@@ -23,6 +25,7 @@ import Hero from '@/public/img/hero.webp'
 import About from './about/page'
 import Contacts from './contacts/page'
 import Services from './services/page'
+import Testimonials from './Testimonials'
 
 
 export default function Home() {
@@ -108,6 +111,8 @@ export default function Home() {
 <Services />
 {/* About Section */}
   <About />
+  {/* Feedback */}
+  <Testimonials />
 {/* Contacts Section */}
 <Contacts />
 </LenisProvider>

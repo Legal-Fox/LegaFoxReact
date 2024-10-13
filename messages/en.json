@@ -23,6 +23,15 @@
       "russian": "Russian"
     }
 },
+"Testimonials": {
+  "title": "Opinie naszych klientów",
+  "googleReviews": "Nasze opinie w Google",
+  "totalReviews": "{count} opinii",
+  "ratingAriaLabel": "Ocena {rating} z 5",
+  "review1": "Szczerze polecam! Bardzo szybko pomogła, znalazła odpowiednie opcje legalizacji w oparciu o sytuację. Julia to najlepszy specjalista! Polecam 💚",
+  "review2": "Chcę podziękować Julii i jej zespołowi za pomoc w uzyskaniu karty pobytu. Prawdziwi profesjonaliści. Polecam i będę polecać Was moim znajomym. Bardzo dziękuję 😊 Życzę sukcesów i prosperity.",
+  "review3": "Skontaktowałam się z Julią we wrześniu w sprawie uzyskania karty pobytu. Dziś otrzymałam kartę 😱☺️ Nadal nie mogę w to uwierzyć, wcześniej czekałam około 2 lat i nie było żadnego postępu w sprawie. Julio, bardzo dziękuję. Gdybym wiedziała, skontaktowałabym się z Tobą dużo wcześniej. Będę polecać was wszystkim moim znajomym. Jeszcze raz bardzo dziękuję 😊"
+},
   "HomePage": {
     "HeroSection": {
       "experience": "Experience",

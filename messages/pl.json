@@ -23,6 +23,15 @@
       "russian": "Rosyjski"
     }
   },
+  "Testimonials": {
+    "title": "Our Clients' Testimonials",
+    "googleReviews": "Our Reviews on Google",
+    "totalReviews": "{count} reviews",
+    "ratingAriaLabel": "Rating {rating} out of 5",
+    "review1": "I sincerely recommend! She helped very quickly, found suitable legalization options based on the situation. Julia is the best specialist! I recommend 💚",
+    "review2": "I want to thank Julia and her team for helping me get a residence card. True professionals. I recommend and will recommend you to my acquaintances. Thank you very much 😊 Success and prosperity.",
+    "review3": "I contacted Julia in September about getting a residence card. Today I received the card 😱☺️ I still can't believe it, before that I waited about 2 years and there was no progress on the case. Julia, thank you very much. If I had known, I would have contacted you much earlier. I will recommend you to all my acquaintances. Thank you very much again 😊"
+  },
   "HomePage": {
     "HeroSection": {
       "title": "Usługi legalizacyjne w Polsce",
