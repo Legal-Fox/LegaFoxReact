@@ -102,7 +102,7 @@ export default function Home() {
       <Image 
         src={Hero}
         alt={tAbout('firstImageAlt')}
-        className="object-contain w-full h-full max-h-[85vh] "
+        className="object-contain w-full h-full max-h-[85vh] min-h-[75vh]"
         priority
       />
     </div>
