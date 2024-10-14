@@ -6,6 +6,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import { useLocale } from 'next-intl';
 
+
 import { Link } from '@/lib/routing'
 import { Button } from "@/components/ui/button";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
@@ -13,6 +14,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { PRIVACY_POLICY_ROUTE } from "@/constants/routes"
+import { useToast } from "@/hooks/use-toast"
 
 // Define the shape of the contactTranslations prop
 interface ContactTranslations {
@@ -54,6 +56,7 @@ interface FormValues {
 
 const ContactForm: React.FC<{ contactTranslations: ContactTranslations }> = ({ contactTranslations }) => {
   const locale = useLocale()
+  const { toast } = useToast()
   const formSchema = z.object({
     name: z.string().min(3, {
       message: contactTranslations.ValidationMessages.name.minLength,
@@ -96,15 +99,29 @@ const ContactForm: React.FC<{ contactTranslations: ContactTranslations }> = ({ c
         body: JSON.stringify(values),
       });
       if (response.ok) {
-        alert(contactTranslations.successMessage);
+        toast({
+          title: "Success",
+          description: contactTranslations.successMessage,
+          duration: 15000
+        })
         form.reset();
       } else {
         const errorData = await response.json();
-        alert(`${contactTranslations.errorMessage} ${errorData.error}`);
+        toast({
+          title: "Error",
+          description: `${contactTranslations.errorMessage} ${errorData.error}`,
+          variant: "destructive",
+          duration: 15000
+        })
       }
     } catch (error) {
       console.error('Error:', error);
-      alert(contactTranslations.errorOccurred);
+      toast({
+        title: "Error",
+        description: contactTranslations.errorOccurred,
+        variant: "destructive",
+        duration: 15000
+      })
     }
   };
 

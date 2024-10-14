@@ -10,6 +10,7 @@ import Footer from "@/components/Footer"
 import ThemeProvider from '@/providers/ThemeProvider'
 import type { Metadata } from "next"
 import StickyScrollToTopButton from '@/components/StickyScrollToTopButton'
+import { Toaster } from "@/components/ui/toaster"
 
 
 const raleway = Raleway({ subsets: ["cyrillic"] });
@@ -51,6 +52,7 @@ export default async function LocaleLayout({
           <NextIntlClientProvider messages={messages}>
             <Header />
               {children}
+            <Toaster />
             <Footer />
             <StickyScrollToTopButton 
             StickyScrollToTopButton={tStickyScrollToTopButton('scrollToTop')} 
