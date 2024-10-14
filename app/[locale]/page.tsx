@@ -2,8 +2,6 @@ import { ArrowTopRightIcon, StarIcon } from "@radix-ui/react-icons"
 import { useTranslations } from 'next-intl'
 import Image from "next/image"
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import GoogleLogo from '@/public/svg/GoogleLogo'
 import ContactForm from "@/components/ContactForm"
 import ProfileHighlights from "@/components/ProfileHighlights"
 import { TextEffect } from '@/components/core/TextEffect'
