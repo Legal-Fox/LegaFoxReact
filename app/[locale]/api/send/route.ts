@@ -8,8 +8,8 @@ export async function POST(request: Request) {
     const { name, phone, message } = await request.json();
 
     const { data, error } = await resend.emails.send({
-      from: 'Anton Malenkij <onboarding@resend.dev>',
-      to: ['itottoro@gmail.com'],
+      from: 'LegalFox <contact@legalfox.pl>',
+      to: ['juliia.redfox@gmail.com'],
       subject: 'New Contact Form Submission',
       react: EmailTemplate({ name, phone, message }),
     });

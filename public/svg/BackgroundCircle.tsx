@@ -6,7 +6,7 @@ export const BackgroundCircle = ({className}:{className?:string}) => (
 	  xmlns="http://www.w3.org/2000/svg"
 	  viewBox="0 0 800 800"
 	>
-	  <circle cx="400" cy="400" r="400" fill="blue" />
+	  <circle cx="400" cy="400" r="400" />
 	</svg>
  );
  

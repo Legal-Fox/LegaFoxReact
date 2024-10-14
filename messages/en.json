@@ -1,5 +1,14 @@
 {
+    "Metadata": {
+      "title": "LegalFox - Legalization of Foreigners in Poland, Residence Permits, Citizenship, Company Registration",
+      "description": "LegalFox - assistance for foreigners in Poland with obtaining Residence Permits (Blue Card, temporary and permanent residence, EU resident card), Polish citizenship, company registration (JDG, Sp. z o.o.), as well as consultations on legalization, document processing, car registration, driver's license replacement, PIT-37 calculations, and other services.",
+      "keywords": "Legalization in Poland, Residence Permit, Blue Card, Permanent Residence, EU Resident Card, company registration in Poland, Polish citizenship, documents in Poland, assistance to foreigners, LegalFox"
+    },
   "Header": {
+    "MobileMenu": {
+      "MobileMenu": "Mobile menu",
+      "ToggleMenu" : "Toggle menu"
+    },
     "ModeToggle": {
       "lightLabel": "Light",
       "darkLabel": "Dark",
@@ -13,54 +22,138 @@
       "ukrainian": "Ukrainian",
       "russian": "Russian"
     }
-  },
+},
+"Testimonials": {
+  "title": "Opinie naszych klientów",
+  "googleReviews": "Nasze opinie w Google",
+  "totalReviews": "{count} opinii",
+  "ratingAriaLabel": "Ocena {rating} z 5",
+  "review1": "Szczerze polecam! Bardzo szybko pomogła, znalazła odpowiednie opcje legalizacji w oparciu o sytuację. Julia to najlepszy specjalista! Polecam 💚",
+  "review2": "Chcę podziękować Julii i jej zespołowi za pomoc w uzyskaniu karty pobytu. Prawdziwi profesjonaliści. Polecam i będę polecać Was moim znajomym. Bardzo dziękuję 😊 Życzę sukcesów i prosperity.",
+  "review3": "Skontaktowałam się z Julią we wrześniu w sprawie uzyskania karty pobytu. Dziś otrzymałam kartę 😱☺️ Nadal nie mogę w to uwierzyć, wcześniej czekałam około 2 lat i nie było żadnego postępu w sprawie. Julio, bardzo dziękuję. Gdybym wiedziała, skontaktowałabym się z Tobą dużo wcześniej. Będę polecać was wszystkim moim znajomym. Jeszcze raz bardzo dziękuję 😊"
+},
   "HomePage": {
     "HeroSection": {
+      "experience": "Experience",
+      "years": "Years",
+      "rating": "Rating: ",
+      "outOf": "out of 5",
       "title": "Legalization Services in Poland",
-      "subTitle": "Welcome to KaMa Documents, your reliable partner in the legalization process in Poland. Our team simplifies the complex immigration process for foreigners, stays in touch at all stages, and handles all bureaucratic procedures.",
+      "subTitle": "Comprehensive legalization solutions in Poland for individuals and companies. Expert support at all stages: from document processing to employment. Entrust us with your legal matters and focus on what's important.",
       "heroButton": "Submit a request"
     },
-    "ServicesSection": {
-      "title": "Our Services",
-      "subTitle": "We help clients obtain all types of residence permits, permanent residency, and citizenship, and also provide individual consultations.",
-      "cards": [
-        {
-          "heading": "Temporary Residence Permit",
-          "subHeading": "Pobyt Czasowy",
-          "content": "Residence card valid for up to 3 years. This type of permit can be obtained on various grounds, such as work, study, business, family reunification, cohabitation, marriage with a Polish citizen, etc."
-        },
-        {
-          "heading": "Permanent Residence Permit",
-          "subHeading": "Pobyt Stały",
-          "content": "A permanent residence card with an indefinite decision and a card valid for 10 or 5 years. This type of permit can be obtained on grounds such as Polish Card, Polish roots, continuous stay of more than 5 years in Poland, etc."
-        },
-        {
-          "heading": "Polish Citizenship",
-          "subHeading": "Obywatelstwo",
-          "content": "You can obtain a Polish passport if you have a permanent residence permit or have lived in Poland for more than 10 years. The citizenship process is explained in detail during the consultation."
-        },
-        {
-          "heading": "Polish Card",
-          "subHeading": "Karta Polaka",
-          "content": "The Polish Card can be obtained by people of Polish origin who can prove their Polish roots and knowledge of the Polish language. It is also available for foreigners who support Polish culture and identity."
-        },
-        {
-          "heading": "Appeal",
-          "subHeading": "Odwołanie",
-          "content": "An appeal can be filed in case of refusal or if the foreigner disagrees with the decision. We analyze the case individually and prepare all necessary documents to change the decision."
-        },
-        {
-          "heading": "Consultation",
-          "subHeading": "Konsultacja",
-          "content": "We offer individual consultations to discuss all issues related to legalization and immigration. We thoroughly examine your situation and offer the best solutions."
-        }
-      ]
-    },
+      "ServicesSection": {
+        "title": "Our Services",
+        "subTitle": "We offer a full range of services for legalizing and employing foreigners in Poland, with an individual approach to each client.",
+        "cards": [
+          {
+            "id": "karta-pobytu",
+            "heading": "Residence Card",
+            "subHeading": "Karta Pobytu",
+            "content": "Comprehensive handling of all types of residence cards: temporary stay (Czasowy), permanent stay (Stały), EU Blue Card (Blue Card), and EU resident card. Grounds: work, study, family reunification, marriage to a Polish citizen, business, and more.",
+            "list": [
+              "Temporary stay (Czasowy)",
+              "Permanent stay (Stały)",
+              "EU Blue Card",
+              "EU resident card",
+              "Residence card for work",
+              "Residence card for study",
+              "Residence card for spouse reunification",
+              "Residence card for child reunification",
+              "Permanent residence card",
+              "EU citizen registration",
+              "Polish citizenship"
+            ]
+          },
+          {
+            "id": "business",
+            "heading": "Starting and Managing a Business",
+            "subHeading": "Założenie i prowadzenie firmy",
+            "content": "Assistance in setting up a company (JDG, Sp. z o.o.), consultations on legalization through business, and managing business activities in Poland. Full support at all stages.",
+            "list": [
+              "Assistance in setting up a company (JDG, Sp. z o.o.)",
+              "Consultations on legalization through business",
+              "Advice on managing business activities in Poland",
+              "Full support at all stages of your business development"
+            ]
+          },
+          {
+            "id": "citizenship",
+            "heading": "Polish Citizenship",
+            "subHeading": "Obywatelstwo polskie",
+            "content": "Assistance in obtaining Polish citizenship. We guide you through all stages of the process, ensuring the most effective path to acquiring citizenship.",
+            "list": [
+              "Assessment of your chances of obtaining citizenship",
+              "Preparation of the necessary document package",
+              "Support at all stages of the process",
+              "Interview preparation (if required)"
+            ]
+          },
+          {
+            "id": "marriage",
+            "heading": "Marriage and Family Matters",
+            "subHeading": "Małżeństwo i sprawy rodzinne",
+            "content": "Assistance in registering marriages in Poland, legalization based on marriage or cohabitation with a Polish citizen, and family reunification.",
+            "list": [
+              "Marriage registration in Poland",
+              "Legalization based on marriage with a Polish citizen",
+              "Legalization based on cohabitation with a Polish citizen",
+              "Assistance with family reunification"
+            ]
+          },
+          {
+            "id": "documents",
+            "heading": "Documents and Registrations",
+            "subHeading": "Dokumenty i rejestracje",
+            "content": "Assistance in obtaining various documents: PIT-37 tax return, vehicle registration, driver's license exchange. Assistance in obtaining 800+ or RKO 1000+ benefits.",
+            "list": [
+              "PIT-37 tax return preparation and submission",
+              "Vehicle registration",
+              "Driver's license exchange to Polish",
+              "Assistance in obtaining 800+ or RKO 1000+ benefits",
+              "Other types of registrations and document handling"
+            ]
+          },
+          {
+            "id": "consultation",
+            "heading": "Consultation",
+            "subHeading": "Konsultacja",
+            "content": "We offer individual consultations to discuss all issues related to legalization and immigration. We thoroughly analyze your situation and provide the best solutions."
+          },
+          {
+            "id": "for-employers",
+            "heading": "Services for Employers",
+            "subHeading": "Usługi dla pracodawców",
+            "content": "For employers, we offer comprehensive and professional services for those who are just starting to employ foreigners in their company, as well as for those who want to extend the stay and employment of their current employees.",
+            "list": [
+              "Registration of a declaration to employ a foreigner and notification to the labor office",
+              "Obtaining a work permit",
+              "Obtaining a residence and work permit",
+              "Annex No. 1 to the temporary residence and work permit",
+              "Obtaining information from the county office on the lack of labor market availability",
+              "Legal representation before authorities",
+              "Assistance in verifying and determining the current status of a foreigner",
+              "Consultations on choosing a method of work legalization",
+              "Preparation and completion of all forms",
+              "Receiving correspondence and meeting deadlines"
+            ]
+          }
+        ]
+      },    
     "AboutUsSection": {
-      "title": "About Us",
-      "subTitle": "My name is Katsiaryna Matsveyeva, and I am the founder of a company specializing in supporting foreigners with relocation and legalization in Poland. Having lived in Poland for over 8 years, I have gone from a visa to obtaining Polish citizenship, and this experience became the foundation of my professional activity. I graduated from a Polish university, participated in numerous specialized trainings, and continuously enhance my expertise in immigration law and legalization. My team's mission is to help each client find the optimal path to obtaining residence permits or citizenship, providing support at every stage of the process."
+      "firstImageAlt": "photo of our team",
+      "secondImageAlt": "photo of the company founder",
+      "mainTitle": "About Us",
+      "mainDescription": "My name is Yuliia Vasylenko, and I am the founder of LegalFox. Our mission is to help foreigners successfully legalize and find employment in Poland by providing expert support at every stage of this complex process.",
+      "firstSubTitle": "Our experience is your advantage",
+      "firstDescription": "With 8 years of experience in legalization and over 4,000 positive reviews, we are proud to have helped thousands of people find a new home in Poland. Our team of experts knows all the intricacies of Polish law and is ready to guide you through every stage of obtaining the necessary documents - from temporary residence permits to Polish citizenship.",
+      "secondSubTitle": "Individual approach",
+      "secondDescription": "At LegalFox, we understand that every case is unique. That's why we offer individual solutions tailored to your specific circumstances. Our goal is not just to prepare documents, but to find the most effective path to your legalization in Poland.",
+      "thirdSubTitle": "Quality guarantee",
+      "thirdDescription": "Your positive outcome is our responsibility. We don't just promise results, we guarantee them. Our team works with full dedication to ensure the successful resolution of your case."
     },
     "ContactsSection": {
+      "mapLinkText": "View larger map",
       "nameLabel": "Name",
       "namePlaceholder": "Enter your name",
       "phoneLabel": "Phone number",
@@ -75,6 +168,10 @@
       "subTitle": "Get in touch with us via any convenient method",
       "titleCard": "Contact Us",
       "subTitleCard": "Fill out the form and we'll get in touch with you shortly",
+      "privacyLabel": "By submitting your request, you agree to the processing of your personal data. Learn more about GDPR in our",
+      "privacyPolicy": "Privacy Policy",
+      "privacyError": "Your consent to data processing is required.",
+      "labelPrivacyPolicy": "I agree to the privacy policy",
       "ValidationMessages": {
         "name": {
           "minLength": "The name must be at least 3 characters long."
@@ -89,13 +186,14 @@
       }
     },
     "FooterSection": {
+      "companyName": "Yuliia Vasylenko",
+      "slogan": "An expert in the field of legalization and employment of foreigners.",
       "contactInfoTitle": "Contact Information",
-      "name": "Katsiaryna Matsveyeva",
-      "nip": "NIP: 8943197670",
-      "email": "support@kamadocuments.com",
-      "city": "Wrocław",
-      "address": "Wita Stwosza 3/622",
-      "postalCode": "50-148",
+      "nip": "NIP: 5842817098",
+      "email": "legalfox.gdansk@gmail.com",
+      "city": "Gdańsk",
+      "address": "Jaskowa Dolina St. 15/113",
+      "postalCode": "80-252",
       "linksTitle": "Links",
       "home": "Home",
       "contacts": "Contacts",
@@ -113,7 +211,27 @@
       "home": "Home",
       "about": "About",
       "contacts": "Contacts",
-      "privacyPolicy": "Privacy Policy"
+      "services": "services",
+      "privacyPolicy": "Privacy Policy",
+      "backToHome": "Return to the main page"
     }
+  },
+  "PrivacyPolicy": {
+    "title": "Privacy Policy",
+    "subtitle": "PROCESSING OF PERSONAL DATA",
+    "introduction": "This Privacy Policy describes how we collect, use, and disclose your personal information when you use our website.",
+    "administrator": "According to Article 13, Section 1 of the Regulation (EU) 2016/679 of the European Parliament and of the Council of April 27, 2016, on the protection of individuals regarding the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation), hereinafter referred to as GDPR, we inform you that the administrator of your personal data is:",
+    "companyInfo": "Yuliia Vasylenko LegalFox (NIP: 58428117098) – Gdańsk, ul. Jaskowa Dolina 15/113, 80-252.",
+    "dataUsage": "Your personal data, collected in connection with the conclusion of a contract, will be processed for the purpose of fulfilling that contract and providing responses to your letters, inquiries, and complaints.",
+    "dataProvision": "Providing personal data is voluntary but necessary for the conclusion and fulfillment of the contract.",
+    "legalBasis": "The legal basis for processing your data is:",
+    "legalBasis1": "performance of the contract or taking action at your request prior to its conclusion (Article 6, Section 1, point b GDPR),",
+    "legalBasis2": "fulfillment of legal obligations imposed on the administrator (Article 6, Section 1, point c GDPR),",
+    "legalBasis3": "legitimate interests of the administrator (Article 6, Section 1, point f GDPR).",
+    "dataSharing": "Your data may be transferred to entities processing it on our behalf, as well as to government bodies entitled to receive it under applicable law.",
+    "dataRetention": "Your data will be processed for the time necessary to achieve the purposes mentioned in Section 2 and then for the period prescribed by law for protection against possible claims.",
+    "dataRights": "You have the right to access your data, correct it, delete it, transfer it, and object to its processing.",
+    "contactInfo": "For questions regarding the protection of personal data, please contact us by email:",
+    "email": "juliia.redfox@gmail.com"
   }
 }

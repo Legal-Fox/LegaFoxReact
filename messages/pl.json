@@ -1,5 +1,14 @@
 {
+  "Metadata": {
+    "title": "LegalFox - Legalizacja cudzoziemców w Polsce, Karty Pobytu, Obywatelstwo, Rejestracja firm",
+    "description": "LegalFox - pomoc dla cudzoziemców w Polsce w uzyskaniu Karty Pobytu (Blue Card, czasowy i stały pobyt, karta rezydenta UE), obywatelstwa polskiego, rejestracji firm (JDG, Sp. z o.o.), a także konsultacje w zakresie legalizacji, załatwiania dokumentów, rejestracji samochodów, wymiany prawa jazdy, obliczeń PIT-37 i innych usług.",
+    "keywords": "Legalizacja w Polsce, Karta Pobytu, Blue Card, Pobyt stały, Karta rezydenta UE, rejestracja firmy w Polsce, obywatelstwo polskie, dokumenty w Polsce, pomoc cudzoziemcom, LegalFox"
+  },
   "Header": {
+    "MobileMenu": {
+      "MobileMenu": "Menu mobilne",
+      "ToggleMenu": "Przełącz menu"
+    },
     "ModeToggle": {
       "lightLabel": "Jasny",
       "darkLabel": "Ciemny",
@@ -14,53 +23,137 @@
       "russian": "Rosyjski"
     }
   },
+  "Testimonials": {
+    "title": "Our Clients' Testimonials",
+    "googleReviews": "Our Reviews on Google",
+    "totalReviews": "{count} reviews",
+    "ratingAriaLabel": "Rating {rating} out of 5",
+    "review1": "I sincerely recommend! She helped very quickly, found suitable legalization options based on the situation. Julia is the best specialist! I recommend 💚",
+    "review2": "I want to thank Julia and her team for helping me get a residence card. True professionals. I recommend and will recommend you to my acquaintances. Thank you very much 😊 Success and prosperity.",
+    "review3": "I contacted Julia in September about getting a residence card. Today I received the card 😱☺️ I still can't believe it, before that I waited about 2 years and there was no progress on the case. Julia, thank you very much. If I had known, I would have contacted you much earlier. I will recommend you to all my acquaintances. Thank you very much again 😊"
+  },
   "HomePage": {
     "HeroSection": {
       "title": "Usługi legalizacyjne w Polsce",
-      "subTitle": "Witamy w KaMa Documents, Twoim niezawodnym partnerze w procesie legalizacji pobytu w Polsce. Nasz zespół upraszcza złożony proces imigracji dla cudzoziemców, pozostaje w kontakcie na wszystkich etapach i zajmuje się wszystkimi procedurami biurokratycznymi.",
-      "heroButton": "Złóż wniosek"
+      "subTitle": "Kompleksowe rozwiązania legalizacyjne w Polsce dla osób prywatnych i firm. Eksperckie wsparcie na każdym etapie: od załatwiania dokumentów po zatrudnienie. Powierz nam swoje sprawy prawne i skup się na tym, co ważne.",
+      "heroButton": "Złóż wniosek",
+      "experience": "Doświadczenia",
+      "years": "Lat",
+      "rating": "Ocena: ",
+      "outOf": "z 5"
     },
-    "ServicesSection": {
-      "title": "Nasze usługi",
-      "subTitle": "Pomagamy klientom w uzyskaniu wszelkiego rodzaju zezwoleń na pobyt, pobytu stałego oraz obywatelstwa, a także oferujemy indywidualne konsultacje.",
-      "cards": [
-        {
-          "heading": "Tymczasowe zezwolenie na pobyt",
-          "subHeading": "Pobyt Czasowy",
-          "content": "Karta pobytu ważna do 3 lat. Ten typ zezwolenia można uzyskać na podstawie pracy, studiów, działalności gospodarczej, łączenia rodzin, konkubinatu, małżeństwa z obywatelem RP itp."
-        },
-        {
-          "heading": "Stałe zezwolenie na pobyt",
-          "subHeading": "Pobyt Stały",
-          "content": "Karta pobytu z decyzją na czas nieokreślony oraz plastikowa karta ważna na 10 lub 5 lat. Ten typ zezwolenia można uzyskać na podstawie Karty Polaka, polskich korzeni, ciągłego pobytu dłuższego niż 5 lat w Polsce itp."
-        },
-        {
-          "heading": "Obywatelstwo polskie",
-          "subHeading": "Obywatelstwo",
-          "content": "Możesz uzyskać polski paszport, jeśli masz pobyt stały lub mieszkasz w Polsce dłużej niż 10 lat. Proces uzyskania obywatelstwa jest szczegółowo omawiany podczas konsultacji."
-        },
-        {
-          "heading": "Karta Polaka",
-          "subHeading": "Karta Polaka",
-          "content": "Kartę Polaka mogą uzyskać osoby polskiego pochodzenia, które udowodnią swoje polskie korzenie i znajomość języka polskiego. Jest ona również dostępna dla cudzoziemców wspierających kulturę i tożsamość polską."
-        },
-        {
-          "heading": "Odwołanie",
-          "subHeading": "Odwołanie",
-          "content": "Odwołanie można złożyć w przypadku odmowy lub niezgody cudzoziemca z decyzją. Indywidualnie analizujemy przypadek i przygotowujemy wszystkie niezbędne dokumenty do zmiany decyzji."
-        },
-        {
-          "heading": "Konsultacja",
-          "subHeading": "Konsultacja",
-          "content": "Oferujemy indywidualne konsultacje, aby omówić wszystkie kwestie związane z legalizacją i imigracją. Dokładnie analizujemy Twoją sytuację i proponujemy najlepsze rozwiązania."
-        }
-      ]
-    },
+      "ServicesSection": {
+        "title": "Nasze usługi",
+        "subTitle": "Oferujemy pełen zakres usług legalizacyjnych i zatrudnienia cudzoziemców w Polsce, z indywidualnym podejściem do każdego klienta.",
+        "cards": [
+          {
+            "id": "karta-pobytu",
+            "heading": "Karta pobytu",
+            "subHeading": "Karta Pobytu",
+            "content": "Kompleksowa obsługa w zakresie wszystkich typów kart pobytu: pobyt czasowy (Czasowy), pobyt stały (Stały), Niebieska Karta UE (Blue Card), karta rezydenta UE. Podstawy: praca, nauka, łączenie rodzin, małżeństwo z obywatelem Polski, działalność gospodarcza i inne.",
+            "list": [
+              "Pobyt czasowy (Czasowy)",
+              "Pobyt stały (Stały)",
+              "Niebieska Karta UE (Blue Card)",
+              "Karta rezydenta UE",
+              "Karta pobytu na podstawie pracy",
+              "Karta pobytu na podstawie nauki",
+              "Karta pobytu na podstawie łączenia małżonków",
+              "Karta pobytu na podstawie łączenia z dziećmi",
+              "Karta stałego pobytu",
+              "Rejestracja obywateli UE",
+              "Obywatelstwo polskie"
+            ]
+          },
+          {
+            "id": "business",
+            "heading": "Zakładanie i prowadzenie działalności gospodarczej",
+            "subHeading": "Założenie i prowadzenie firmy",
+            "content": "Pomoc w zakładaniu firmy (JDG, Sp. z o.o.), konsultacje w zakresie legalizacji poprzez działalność gospodarczą oraz prowadzenia biznesu w Polsce. Pełne wsparcie na każdym etapie.",
+            "list": [
+              "Pomoc w zakładaniu firmy (JDG, Sp. z o.o.)",
+              "Konsultacje dotyczące legalizacji poprzez biznes",
+              "Porady w zakresie prowadzenia działalności gospodarczej w Polsce",
+              "Pełne wsparcie na każdym etapie rozwoju twojej firmy"
+            ]
+          },
+          {
+            "id": "citizenship",
+            "heading": "Obywatelstwo polskie",
+            "subHeading": "Obywatelstwo polskie",
+            "content": "Pomoc w uzyskaniu obywatelstwa polskiego. Przeprowadzimy cię przez wszystkie etapy procesu, zapewniając najskuteczniejszą drogę do uzyskania obywatelstwa.",
+            "list": [
+              "Ocena twoich szans na uzyskanie obywatelstwa",
+              "Przygotowanie niezbędnego pakietu dokumentów",
+              "Wsparcie na każdym etapie procesu",
+              "Przygotowanie do rozmowy (jeśli to konieczne)"
+            ]
+          },
+          {
+            "id": "marriage",
+            "heading": "Małżeństwo i sprawy rodzinne",
+            "subHeading": "Małżeństwo i sprawy rodzinne",
+            "content": "Pomoc w zawieraniu małżeństw na terenie Polski, legalizacja na podstawie małżeństwa lub konkubinatu z obywatelem Polski. Wsparcie w zakresie łączenia rodzin.",
+            "list": [
+              "Zawieranie małżeństw na terenie Polski",
+              "Legalizacja na podstawie małżeństwa z obywatelem Polski",
+              "Legalizacja na podstawie konkubinatu z obywatelem Polski",
+              "Wsparcie w zakresie łączenia rodzin"
+            ]
+          },
+          {
+            "id": "documents",
+            "heading": "Dokumenty i rejestracje",
+            "subHeading": "Dokumenty i rejestracje",
+            "content": "Pomoc w uzyskaniu różnych dokumentów: rozliczenie PIT-37, rejestracja pojazdu, wymiana prawa jazdy. Wsparcie w uzyskaniu świadczeń 800+ lub RKO 1000+.",
+            "list": [
+              "Rozliczenie i złożenie deklaracji podatkowej PIT-37",
+              "Rejestracja pojazdu",
+              "Wymiana prawa jazdy na polskie",
+              "Wsparcie w uzyskaniu świadczeń 800+ lub RKO 1000+",
+              "Inne rodzaje rejestracji i uzyskiwania dokumentów"
+            ]
+          },
+          {
+            "id": "consultation",
+            "heading": "Konsultacja",
+            "subHeading": "Konsultacja",
+            "content": "Oferujemy indywidualne konsultacje w celu omówienia wszystkich kwestii związanych z legalizacją i imigracją. Dokładnie analizujemy twoją sytuację i proponujemy najlepsze rozwiązania."
+          },
+          {
+            "id": "for-employers",
+            "heading": "Usługi dla pracodawców",
+            "subHeading": "Usługi dla pracodawców",
+            "content": "Dla pracodawców oferujemy kompleksową i profesjonalną obsługę zarówno dla tych, którzy dopiero rozpoczynają proces zatrudnienia cudzoziemców w swojej firmie, jak i dla tych, którzy chcą przedłużyć pobyt i pracę swoich pracowników.",
+            "list": [
+              "Rejestracja oświadczenia o powierzeniu pracy cudzoziemcowi i zgłoszenie do urzędu pracy",
+              "Uzyskanie zezwolenia na pracę",
+              "Uzyskanie zezwolenia na pobyt i pracę",
+              "Załącznik nr 1 do zezwolenia na pobyt czasowy i pracę",
+              "Uzyskanie informacji od starosty o braku możliwości zaspokojenia potrzeb kadrowych",
+              "Reprezentacja prawna przed organami",
+              "Pomoc w sprawdzaniu i określaniu bieżącego statusu cudzoziemca",
+              "Konsultacje w zakresie wyboru sposobu legalizacji pracy",
+              "Sporządzanie i kompletowanie wszystkich formularzy",
+              "Odbieranie korespondencji i dotrzymywanie terminów"
+            ]
+          }
+        ]
+      },    
     "AboutUsSection": {
-      "title": "O nas",
-      "subTitle": "Nazywam się Katsiaryna Matsveyeva i jestem założycielką firmy specjalizującej się we wsparciu cudzoziemców w kwestiach związanych z przeprowadzką i legalizacją pobytu w Polsce. Mieszkając w Polsce od ponad 8 lat, przeszłam drogę od wizy po uzyskanie polskiego obywatelstwa, a to doświadczenie stało się fundamentem mojej działalności zawodowej. Ukończyłam uczelnię w Polsce, uczestniczyłam w wielu specjalistycznych szkoleniach i ciągle podnoszę swoje kwalifikacje w zakresie prawa imigracyjnego i legalizacji. Moja misja i misja mojego zespołu polega na pomaganiu każdemu klientowi w znalezieniu optymalnej ścieżki do uzyskania zezwoleń na pobyt lub obywatelstwa, zapewniając wsparcie na każdym etapie procesu."
+      "firstImageAlt": "zdjęcie naszego zespołu",
+      "secondImageAlt": "zdjęcie założyciela firmy",
+      "mainTitle": "O nas",
+      "mainDescription": "Nazywam się Yuliia Vasylenko i jestem założycielką firmy LegalFox. Naszą misją jest pomoc cudzoziemcom w skutecznej legalizacji pobytu i znalezieniu zatrudnienia w Polsce, oferując eksperckie wsparcie na każdym etapie tego złożonego procesu.",
+      "firstSubTitle": "Nasze doświadczenie to twoja przewaga",
+      "firstDescription": "Z 8-letnim doświadczeniem w dziedzinie legalizacji oraz ponad 4000 pozytywnymi opiniami, jesteśmy dumni z tego, że pomogliśmy tysiącom osób znaleźć nowy dom w Polsce. Nasz zespół ekspertów zna wszystkie niuanse polskiego prawa i jest gotowy poprowadzić cię przez każdy etap uzyskiwania niezbędnych dokumentów - od tymczasowego pozwolenia na pobyt po obywatelstwo polskie.",
+      "secondSubTitle": "Indywidualne podejście",
+      "secondDescription": "W LegalFox rozumiemy, że każda sprawa jest wyjątkowa. Dlatego oferujemy indywidualne rozwiązania dostosowane do twoich konkretnych okoliczności. Naszym celem nie jest tylko przygotowanie dokumentów, ale znalezienie najbardziej efektywnej drogi do twojej legalizacji w Polsce.",
+      "thirdSubTitle": "Gwarancja jakości",
+      "thirdDescription": "Twoje pozytywne rozstrzygnięcie to nasza odpowiedzialność. Nie tylko obiecujemy wyniki, ale je gwarantujemy. Nasz zespół pracuje z pełnym zaangażowaniem, aby zapewnić pomyślne rozwiązanie twojej sprawy."
     },
     "ContactsSection": {
+      "mapLinkText": "Pokaż większą mapę",
       "nameLabel": "Imię",
       "namePlaceholder": "Wprowadź swoje imię",
       "phoneLabel": "Numer telefonu",
@@ -75,6 +168,10 @@
       "subTitle": "Skontaktuj się z nami w dogodny sposób",
       "titleCard": "Skontaktuj się z nami",
       "subTitleCard": "Wypełnij formularz, a my skontaktujemy się z Tobą wkrótce",
+      "privacyLabel": "Wysyłając zapytanie, zgadzasz się na przetwarzanie swoich danych osobowych. Dowiedz się więcej o RODO w",
+      "privacyPolicy": "Polityce prywatności",
+      "privacyError": "Wymagana jest Twoja zgoda na przetwarzanie danych.",
+      "labelPrivacyPolicy": "Zgadzam się z polityką prywatności",
       "ValidationMessages": {
         "name": {
           "minLength": "Imię musi zawierać co najmniej 3 znaki."
@@ -89,13 +186,14 @@
       }
     },
     "FooterSection": {
+      "companyName": "Yuliia Vasylenko",
+      "slogan": "Ekspert w dziedzinie legalizacji i zatrudnienia cudzoziemców.",
       "contactInfoTitle": "Informacje kontaktowe",
-      "name": "Katsiaryna Matsveyeva",
-      "nip": "NIP: 8943197670",
-      "email": "support@kamadocuments.com",
-      "city": "Wrocław",
-      "address": "Wita Stwosza 3/622",
-      "postalCode": "50-148",
+      "nip": "NIP: 5842817098",
+      "email": "legalfox.gdansk@gmail.com",
+      "city": "Gdańsk",
+      "address": "ul. Jaskowa Dolina 15/113",
+      "postalCode": "80-252",
       "linksTitle": "Linki",
       "home": "Strona główna",
       "contacts": "Kontakt",
@@ -113,7 +211,27 @@
       "home": "Strona główna",
       "about": "O nas",
       "contacts": "Kontakt",
-      "privacyPolicy": "Polityka prywatności"
+      "privacyPolicy": "Polityka prywatności",
+      "services": "Usługi",
+      "backToHome": "Powrót do strony głównej"
     }
+  },
+  "PrivacyPolicy": {
+    "title": "Polityka Prywatności",
+    "subtitle": "PRZETWARZANIE DANYCH OSOBOWYCH",
+    "introduction": "Niniejsza Polityka Prywatności opisuje, w jaki sposób zbieramy, wykorzystujemy i ujawniamy Twoje dane osobowe podczas korzystania z naszej strony internetowej.",
+    "administrator": "Zgodnie z art. 13 ust. 1 Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych oraz swobodnego przepływu takich danych i uchylenia dyrektywy 95/46/WE (ogólne rozporządzenie o ochronie danych), zwane dalej RODO, informujemy, że administratorem Twoich danych osobowych jest:",
+    "companyInfo": "Yuliia Vasylenko LegalFox (NIP: 58428117098) – Gdańsk, ul. Jaskowa Dolina 15/113, 80-252.",
+    "dataUsage": "Twoje dane osobowe, zebrane w związku z zawarciem umowy, będą przetwarzane w celu realizacji tej umowy oraz udzielania odpowiedzi na Twoje pisma, zapytania i skargi.",
+    "dataProvision": "Podanie danych osobowych jest dobrowolne, ale niezbędne do zawarcia i realizacji umowy.",
+    "legalBasis": "Podstawą prawną przetwarzania Twoich danych jest:",
+    "legalBasis1": "wykonanie umowy lub podjęcie działań na Twoje żądanie przed jej zawarciem (art. 6 ust. 1 lit. b RODO),",
+    "legalBasis2": "wykonanie obowiązków prawnych nałożonych na administratora (art. 6 ust. 1 lit. c RODO),",
+    "legalBasis3": "uzasadnione interesy administratora (art. 6 ust. 1 lit. f RODO).",
+    "dataSharing": "Twoje dane mogą zostać przekazane podmiotom przetwarzającym je na nasze zlecenie, jak również organom państwowym uprawnionym do ich otrzymania zgodnie z obowiązującymi przepisami prawa.",
+    "dataRetention": "Twoje dane będą przetwarzane przez czas niezbędny do osiągnięcia celów wskazanych w pkt 2, a następnie przez okres przewidziany przepisami prawa na ochronę przed ewentualnymi roszczeniami.",
+    "dataRights": "Masz prawo dostępu do swoich danych, ich poprawiania, usunięcia, przeniesienia, a także do sprzeciwu wobec ich przetwarzania.",
+    "contactInfo": "W przypadku pytań dotyczących ochrony danych osobowych prosimy o kontakt mailowy:",
+    "email": "juliia.redfox@gmail.com"
   }
 }
