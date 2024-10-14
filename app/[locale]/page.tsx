@@ -18,13 +18,11 @@ import LenisProvider from '@/providers/LenisProvider'
 import { BackgroundCircle } from '@/public/svg/BackgroundCircle'
 import { CirclePattern } from '@/public/svg/CirclePattern'
 
-
 import Hero from '@/public/img/hero.webp'
 import About from './about/page'
 import Contacts from './contacts/page'
 import Services from './services/page'
 import Testimonials from './Testimonials'
-
 
 export default function Home() {
   const tHero = useTranslations('HomePage.HeroSection')
